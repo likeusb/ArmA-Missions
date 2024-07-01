@@ -1,0 +1,35 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 8;
+};
+
+author = Likeusb;
+onLoadName = SCP;
+OnLoadMission = "Never gonna give you up, never gonna let you down, never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye, never gonna tell a lie or hurt you";
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+respawnOnStart = 0;
+allowFunctionsRecompile = 1;
+
+class CfgMusic 
+{
+	tracks[] = {};
+	class Test
+	{
+		name = "Test";
+		sound[] = {"\music\test.ogg", db+0, 1.0};
+	};
+};
+
+class CfgDebriefing
+{
+	class EndSuccess
+	{
+		title = "Success";
+		subtitle = "Anti-naval outpost destroyed";
+		description = "The Fifth Fleet is free to anchor their ships way closer to shore and shell the whole island overnight.";
+	};
+};
