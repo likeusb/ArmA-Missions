@@ -24,3 +24,4 @@ MISSION_ROOT = call {
     toString _arr
 };
 
+BIS_fnc_endMission = compileFinal "";

@@ -12,6 +12,7 @@ respawn = BASE;
 respawndelay = 5;
 disabledAI = true;
 respawnOnStart = 0;
+allowFunctionsRecompile = 1;
 
 class CfgMusic 
 {
@@ -20,5 +21,15 @@ class CfgMusic
 	{
 		name = "Test";
 		sound[] = {"\music\test.ogg", db+0, 1.0};
+	};
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Success";
+		subtitle = "Anti-naval outpost destroyed";
+		description = "The Fifth Fleet is free to anchor their ships way closer to shore and shell the whole island overnight.";
 	};
 };

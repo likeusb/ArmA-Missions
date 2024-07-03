@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=462;
+		nextID=471;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=66;
 	};
 	class Camera
 	{
-		pos[]={4553.9775,20.145947,897.41882};
-		dir[]={-0.81865096,-0.17288317,0.54768682};
-		up[]={-0.14372307,0.98493546,0.096151419};
-		aside[]={0.55605674,7.6825381e-007,0.83116335};
+		pos[]={4309.7158,14.866741,1134.8324};
+		dir[]={-0.65781701,-0.56927985,-0.49315044};
+		up[]={-0.45549449,0.82214385,-0.34147385};
+		aside[]={-0.5998348,-1.4901161e-008,0.80012405};
 	};
 };
 binarizationWanted=0;
@@ -49,13 +49,14 @@ addons[]=
 	"fow_air_c",
 	"A3_Modules_F",
 	"A3_Rocks_F_Blunt",
-	"A3_Modules_F_Multiplayer"
+	"A3_Modules_F_Multiplayer",
+	"A3_Air_F_EPC_Plane_CAS_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -133,6 +134,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item13
+		{
+			className="A3_Air_F_EPC";
+			name="Arma 3 Win Episode - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -153,6 +161,19 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="ENH_respawnTickets_independent";
+			expression="if (!is3DEN && isMultiplayer && isServer) then {[independent, _value] call BIS_fnc_respawnTickets}";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=25;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -162,7 +183,7 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=2;
+						items=3;
 						class Item0
 						{
 							class data
@@ -179,11 +200,19 @@ class CustomAttributes
 								value="Counter";
 							};
 						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Tickets";
+							};
+						};
 					};
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 	class Category1
 	{
@@ -308,7 +337,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=57;
 		class Item0
 		{
 			dataType="Group";
@@ -321,8 +350,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4133.3979,3.0517781,1323.0095};
-						angles[]={0,2.2661359,-0};
+						position[]={4305.7026,3.077441,1127.3102};
+						angles[]={0,4.5318098,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -6303,12 +6332,12 @@ class Mission
 		class Item53
 		{
 			dataType="Trigger";
-			position[]={4302.7129,3.1660488,1109.446};
+			position[]={4307.1548,3.2127159,1115.807};
 			angle=0.67076486;
 			class Attributes
 			{
 				condition="this && (simulationEnabled triggerComms == true)";
-				onActivation="cas1 enableSimulation true;" \n "cas2 enableSimulation true;" \n "cas3 enableSimulation true;" \n "cas4 enableSimulation true;" \n "cas5 enableSimulation true;";
+				onActivation="cas1 enableSimulation true;" \n "cas2 enableSimulation true;" \n "cas3 enableSimulation true;" \n "cas4 enableSimulation true;" \n "cas5 enableSimulation true;" \n "[""EndSuccess"", true, 2] call BIS_fnc_endMission;";
 				sizeA=5;
 				sizeB=97.171997;
 				sizeC=78.439003;
@@ -6317,6 +6346,53 @@ class Mission
 			};
 			id=461;
 			type="EmptyDetectorArea10x10";
+		};
+		class Item54
+		{
+			dataType="Trigger";
+			position[]={4445,3.2665503,1002.345};
+			class Attributes
+			{
+				onActivation="[""EndSuccess"", true, 2] call BIS_fnc_endMissionServer;";
+				sizeA=250;
+				sizeB=250;
+				activationBy="GUER SEIZED";
+			};
+			id=465;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4286.1172,21.375748,1111.498};
+				angles[]={6.2292371,0,0.065903634};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="debug";
+				disableSimulation=1;
+			};
+			id=469;
+			type="B_Plane_CAS_01_dynamicLoadout_F";
+			atlOffset=15.892002;
+		};
+		class Item56
+		{
+			dataType="Trigger";
+			position[]={4300.127,3.1732593,1128.509};
+			class Attributes
+			{
+				onActivation="debug enableSimulation true;" \n """End1"" call BIS_fnc_endMission;";
+				sizeA=4.3730001;
+				sizeB=5.0580001;
+				sizeC=0;
+				activationBy="ANY";
+			};
+			id=470;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
