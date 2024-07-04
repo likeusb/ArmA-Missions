@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=541;
+		nextID=549;
 	};
 	class MarkerIDProvider
 	{
-		nextID=4;
+		nextID=42;
 	};
 	class LayerIndexProvider
 	{
-		nextID=81;
+		nextID=105;
 	};
 	class Camera
 	{
 		pos[]={4236.6401,596.9231,7418.8057};
-		dir[]={-0.59261489,-0.28426981,0.75366032};
-		up[]={-0.1757136,0.95874399,0.22346434};
-		aside[]={0.78609133,-8.3600753e-009,0.61811638};
+		dir[]={-0.59261328,-0.28426901,0.75365818};
+		up[]={-0.17571062,0.95874459,0.22346063};
+		aside[]={0.78608865,0,0.61811388};
 	};
 };
 binarizationWanted=0;
@@ -566,7 +566,63 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute1
+		{
+			property="ENH_introText";
+			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=15;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="June 25th, 2035";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="16:33";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Malden";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
 	};
 };
 class Mission
@@ -587,14 +643,14 @@ class Mission
 		year=2035;
 		month=6;
 		day=25;
-		hour=17;
-		minute=-26;
+		hour=16;
+		minute=-28;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=13;
+		items=20;
 		class Item0
 		{
 			dataType="Layer";
@@ -790,7 +846,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="player setPos [6691.83,9690.69,0]; player setDir 0; respawnPos setPos [7063.97,9731.34,0];";
+									value="player setPos [6691.83,9690.69,0]; player setDir 0; respawnPos setPos [7063.97,9731.34,0]; setDate [2035, 6, 25, 16, 34];";
 								};
 							};
 						};
@@ -884,7 +940,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="player setPos [1163.28,11857.6,0]; player setDir 180; respawnPos setPos [1091.15,11891.3,0];";
+									value="player setPos [1163.28,11857.6,0]; player setDir 180; respawnPos setPos [1091.15,11891.3,0]; setDate [2035, 6, 25, 16, 34];";
 								};
 							};
 						};
@@ -4389,7 +4445,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={1099.8336,5.4283323,11816.953};
-							angle=0.47816232;
+							angle=0.47816223;
 							class Attributes
 							{
 								sizeA=5;
@@ -6772,6 +6828,62 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={7074.1621,89.796967,7291.1226};
+			name="marker_34";
+			type="flag_CSAT";
+			id=541;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={7110.7656,68.492004,5810.4521};
+			name="marker_35";
+			type="flag_CSAT";
+			id=542;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={7059.8501,79.989304,7205.4229};
+			name="marker_36";
+			type="flag_USA";
+			id=543;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={6878.1548,91.544998,7188.8926};
+			name="marker_37";
+			type="flag_CSAT";
+			id=544;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={6970.2158,82.384384,7159.2285};
+			name="marker_38";
+			type="flag_UK";
+			id=545;
+		};
+		class Item18
+		{
+			dataType="Marker";
+			position[]={7153.1465,70.559792,5948.6152};
+			name="marker_39";
+			type="flag_Germany";
+			id=546;
+		};
+		class Item19
+		{
+			dataType="Marker";
+			position[]={7090.75,74.132332,5966.0049};
+			name="marker_40";
+			type="flag_France";
+			id=547;
 		};
 	};
 	class Connections

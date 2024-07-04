@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=118;
+		nextID=128;
 	};
 	class Camera
 	{
@@ -501,7 +501,63 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute1
+		{
+			property="ENH_introText";
+			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="June 26th, 2035";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="16:50";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="STRING";
+								value="";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
 	};
 };
 class Mission
@@ -521,9 +577,9 @@ class Mission
 		windForced=1;
 		year=2035;
 		month=6;
-		day=24;
-		hour=12;
-		minute=0;
+		day=26;
+		hour=17;
+		minute=-9;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -911,7 +967,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6861.8901,82.316566,10245.167};
-					angle=3.5748532;
+					angle=3.5748529;
 					class Attributes
 					{
 						text="Audio setup";
@@ -2528,7 +2584,7 @@ class Mission
 								};
 							};
 							id=902;
-							atlOffset=7.6293945e-006;
+							atlOffset=1.5258789e-005;
 						};
 						class Item2
 						{
@@ -2562,15 +2618,15 @@ class Mission
 							};
 							id=903;
 							type="I_G_Mortar_01_F";
-							atlOffset=7.6293945e-006;
+							atlOffset=1.5258789e-005;
 						};
 					};
 					id=917;
-					atlOffset=0.085205078;
+					atlOffset=0.085212708;
 				};
 			};
 			id=115;
-			atlOffset=3.257431;
+			atlOffset=3.2574387;
 		};
 		class Item3
 		{
@@ -6344,7 +6400,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1909.4546,157.2408,2216.1685};
-						angles[]={0,0.3035928,-0};
+						angles[]={0,0.3035928,0};
 					};
 					side="Civilian";
 					flags=7;

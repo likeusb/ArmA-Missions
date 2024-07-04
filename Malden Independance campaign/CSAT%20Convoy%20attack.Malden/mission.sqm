@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=54;
+		nextID=86;
 	};
 	class Camera
 	{
@@ -331,6 +331,67 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="ENH_introText";
+			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=15;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="June 24th, 2035";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="19:50";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Malden";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -454,7 +515,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="player setPos [5938.52,6715.86,0]; player setDir -30;";
+									value="player setPos [5938.52,6715.86,0]; player setDir -30; setDate [2035, 6, 24, 20, 04]; respawnPos setPos [5881.63,6855.92,0];";
 								};
 							};
 						};
@@ -548,7 +609,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="player setPos [5230.05,6519.77,0]; player setDir 0;";
+									value="player setPos [5230.05,6519.77,0]; player setDir 0; setDate [2035, 6, 24, 20, 01]; respawnPos setPos [5191.96,6653.99,0];";
 								};
 							};
 						};
@@ -625,12 +686,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={7336.4175,21.849375,5096.6309};
-						angles[]={0.038381387,0,0};
+						position[]={7336.417,21.849373,5096.6309};
+						angles[]={0.038379788,0,0};
 					};
 					name="southwardRetreat";
 					id=6;
 					type="ModuleStrategicMapMission_F";
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -642,7 +704,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="player setPos [7486.75,5154.15,0]; player setDir -105;";
+									value="player setPos [7486.75,5154.15,0]; player setDir -105; setDate [2035, 6, 24, 20, 17]; respawnPos setPos [7391.03,5109.22,0];";
 								};
 							};
 						};
