@@ -1,0 +1,15 @@
+class Header;
+
+author = Likeusb;
+onLoadName = "Rough start";
+allowFunctionsRecompile = 1;
+
+class CfgMusic 
+{
+	tracks[] = {};
+	class Test
+	{
+		name = "Test";
+		sound[] = {"\audio\test.ogg", db+0, 1.0};
+	};
+};
