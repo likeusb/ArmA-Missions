@@ -20,5 +20,7 @@ class Campaign
             template = "Civ.Malden";
             end1 = "Mission2"
         }
+
+        
     }
 }
