@@ -1,6 +1,6 @@
 _westOrEast = simulationEnabled triggerComms;
 
-if (_westOrEast = false) then {
+if (!_westOrEast) then {
     onOff setPos [7706.14,9696.31,0];
 }
 
