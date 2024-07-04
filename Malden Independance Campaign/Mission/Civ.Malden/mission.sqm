@@ -1674,7 +1674,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7397.2798,171.06195,7901.5679};
-			angle=1.9223053;
+			angle=1.9223052;
 			class Attributes
 			{
 				text="Assigns mission to escape";
