@@ -1471,7 +1471,7 @@ class Mission
 			};
 			id=36;
 			type="Weapon_hgun_ACPC2_F";
-			atlOffset=0.81255054;
+			atlOffset=0.72709846;
 		};
 		class Item12
 		{
@@ -1487,7 +1487,7 @@ class Mission
 			};
 			id=37;
 			type="Weapon_arifle_Mk20_plain_F";
-			atlOffset=0.81255054;
+			atlOffset=0.72711277;
 		};
 		class Item13
 		{
@@ -9691,7 +9691,7 @@ class Mission
 			};
 			id=300;
 			type="Land_Notepad_F";
-			atlOffset=0.81255054;
+			atlOffset=0.72708225;
 		};
 		class Item121
 		{
@@ -10444,7 +10444,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8463.6406,6.3170862,3852.687};
-				angles[]={-0,3.1943505,6.2807932};
+				angles[]={0,3.1943505,6.2807932};
 			};
 			side="Empty";
 			flags=4;
@@ -12186,7 +12186,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9368.4482,3.6814389,3852.6985};
-						angles[]={0,4.5886345,-0};
+						angles[]={0,4.5886345,0};
 					};
 					side="East";
 					flags=7;
@@ -12215,7 +12215,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9362.4512,3.6814392,3847.6919};
-						angles[]={0,5.100708,-0};
+						angles[]={0,5.100708,0};
 					};
 					side="East";
 					flags=7;
@@ -12282,7 +12282,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9339.1543,3.6814389,3837.9912};
-						angles[]={0,5.3451018,-0};
+						angles[]={0,5.3451018,0};
 					};
 					side="East";
 					flags=7;
