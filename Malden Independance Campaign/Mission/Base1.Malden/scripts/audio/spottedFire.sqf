@@ -1,4 +1,4 @@
-
+// playMusic "Test";
 
 ["You", "Is that... smoke?"] spawn BIS_fnc_showSubtitle;
 
