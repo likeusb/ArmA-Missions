@@ -1,4 +1,4 @@
-// playMusic "Test";
+playMusic "HQenter";
 
 ["Sgt. Byrne", "Another survivor..."] spawn BIS_fnc_showSubtitle;
 

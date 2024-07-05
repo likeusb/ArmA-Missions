@@ -1,4 +1,4 @@
-// playMusic "Test";
+playMusic "briefing";
 
 ["Maj. Johnson", "Just in time."] spawn BIS_fnc_showSubtitle;
 

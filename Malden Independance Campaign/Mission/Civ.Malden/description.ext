@@ -1,5 +1,3 @@
-class Header;
-
 author = Likeusb;
 onLoadName = "Rough start";
 allowFunctionsRecompile = 1;

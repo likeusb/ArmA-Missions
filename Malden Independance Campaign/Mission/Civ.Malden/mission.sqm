@@ -103,7 +103,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="SCALAR";
-								value=15;
+								value=5;
 							};
 						};
 						class Item1
@@ -127,7 +127,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="Malden.";
+								value="La Trinité, Malden.";
 							};
 						};
 						class Item4
@@ -1674,7 +1674,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7397.2798,171.06195,7901.5679};
-			angle=1.9223052;
+			angle=1.9223049;
 			class Attributes
 			{
 				text="Assigns mission to escape";
@@ -2447,6 +2447,7 @@ class Mission
 			class Attributes
 			{
 				activationBy="ANYPLAYER";
+				type="END1";
 			};
 			id=121;
 			type="EmptyDetectorAreaR50";

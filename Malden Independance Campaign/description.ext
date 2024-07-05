@@ -18,9 +18,19 @@ class Campaign
         class Mission1: MissionDefault
         {
             template = "Civ.Malden";
-            end1 = "Mission2"
+            end1 = "Mission2";
         }
 
-        
+        class Mission2: MissionDefault
+        {
+            template = "Checkpoint.Malden";
+            end1 = "Mission3";
+        }
+
+        class Mission3: MissionDefault
+        {
+            template = "Base1.Malden";
+            end1 = "Mission4";
+        }
     }
 }
