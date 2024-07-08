@@ -1,0 +1,154 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
+	class ItemIDProvider
+	{
+		nextID=4;
+	};
+	class LayerIndexProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={6096.4478,148.052,10848.749};
+		dir[]={0.15017146,-0.47207749,0.86872542};
+		up[]={0.080413587,0.88154882,0.46518898};
+		aside[]={0.98542619,-4.1851854e-007,-0.17034222};
+	};
+};
+binarizationWanted=0;
+sourceName="Preparation";
+addons[]=
+{
+	"A3_Structures_F_Mil_Cargo"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=877431;
+class ScenarioData
+{
+	author="Likeusb";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=1;
+		class Item0
+		{
+			dataType="Layer";
+			name="Layer 1";
+			state=1;
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6099.4321,132.83255,10874.363};
+						angles[]={0,4.6575332,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=0;
+					type="Land_Cargo_Tower_V2_F";
+					atlOffset=-0.17500305;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="DoorStates";
+							expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=3;
+										class Item0
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=42;
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=2;
+			atlOffset=-0.17500305;
+		};
+	};
+};
