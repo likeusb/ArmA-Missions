@@ -6,3 +6,8 @@ _xyzDistance = [(_vic select 0) - (_supply1 select 0), (_vic select 1) - (_suppl
 hint format["%1 [NEXT] %2 [NEXT] %3", _xyzDistance, _vic, _supply1];
 
 copyToClipboard format["%1", _xyzDistance];
+
+if ((_xyzDistance select 2) > 80) then 
+{
+    debug enableSimulation true;
+};
