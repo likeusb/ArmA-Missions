@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={990.81488,18.735931,11671.378};
-		dir[]={0.20903844,-0.22590709,0.95146984};
-		up[]={0.048477996,0.97414583,0.22065607};
-		aside[]={0.97671634,-1.7626735e-007,-0.21458569};
+		pos[]={965.617,58.33559,11540.711};
+		dir[]={0.15015768,-0.52907544,0.83519};
+		up[]={0.093621172,0.84857392,0.52072918};
+		aside[]={0.9842248,4.5496563e-008,-0.176952};
 	};
 };
 binarizationWanted=0;
@@ -2487,87 +2487,40 @@ class Mission
 		};
 		class Item30
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={899.3819,0.0014388561,11216.708};
-						angles[]={0,0.14546384,0};
-					};
-					side="East";
-					flags=2;
-					class Attributes
-					{
-					};
-					id=142;
-					type="O_Soldier_F";
-					atlOffset=59.679218;
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={1004.4869,1.0870222,11730.811};
-					script="\z\lambs\addons\wp\scripts\fnc_wpAssault.sqf";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=148;
-					type="lambs_danger_Attack";
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=1;
-				};
-				class Links
-				{
-					items=1;
-					class Item0
-					{
-						linkID=0;
-						item0=142;
-						item1=141;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-				};
-			};
-			id=140;
-			atlOffset=23.934839;
-		};
-		class Item31
-		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={974.02698,1.2435327,11590.847};
-				angles[]={0,0.14546384,0};
+				position[]={974.02698,1.2436929,11590.847};
+				angles[]={0,0.14545573,0};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
+				name="boat1";
 			};
 			id=141;
 			type="O_Boat_Transport_01_F";
-			atlOffset=23.934839;
+			atlOffset=23.934999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Group";
 			side="East";
@@ -2629,7 +2582,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={899.3819,0.0014388561,11216.708};
-						angles[]={0,0.14546384,0};
+						angles[]={0,0.14545573,0};
 					};
 					side="East";
 					flags=1;
@@ -2648,7 +2601,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={899.3819,0.0014388561,11216.708};
-						angles[]={0,0.14546384,0};
+						angles[]={0,0.14545573,0};
 					};
 					side="East";
 					flags=1;
@@ -2666,7 +2619,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={899.3819,0.0014388561,11216.708};
-						angles[]={0,0.14546384,0};
+						angles[]={0,0.14545573,0};
 					};
 					side="East";
 					flags=1;
@@ -2751,25 +2704,91 @@ class Mission
 				};
 			};
 			id=143;
-			atlOffset=23.934839;
+			atlOffset=23.934999;
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Trigger";
-			position[]={1000.327,0.0002348423,11711.964};
-			angle=1.8086149;
+			position[]={1002.4561,0,11707.164};
+			angle=1.8086144;
 			class Attributes
 			{
 				onActivation="execVM ""scripts\boat1.sqf"";";
 				sizeA=5;
-				sizeB=19.910999;
+				sizeB=32.811668;
 				sizeC=5;
 				useOwnerActivation=1;
 				isRectangle=1;
 			};
 			id=153;
 			type="EmptyDetectorArea10x10";
-			atlOffset=1.021;
+			atlOffset=2.0285642;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={899.3819,0.0014388561,11216.708};
+						angles[]={0,0.14545573,0};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+						name="boat1D";
+					};
+					id=142;
+					type="O_Soldier_F";
+					atlOffset=59.679218;
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+038;
+					position[]={1004.4869,1.0870222,11730.811};
+					script="\z\lambs\addons\wp\scripts\fnc_wpAssault.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=148;
+					type="lambs_danger_Attack";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=142;
+						item1=141;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=140;
+			atlOffset=23.934999;
 		};
 	};
 	class Connections
