@@ -4,4 +4,6 @@ hint "activated";
 
 { action ["Eject", boat1] } forEach crew boat1;
 
-{ allowGetIn false } forEach crew boat1;
+_units = crew boat1;
+
+_units allowGetIn false;
