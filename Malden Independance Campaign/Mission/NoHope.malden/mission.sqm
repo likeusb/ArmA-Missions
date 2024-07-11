@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=184;
+		nextID=188;
 	};
 	class Camera
 	{
-		pos[]={838.99158,58.977051,12315.559};
-		dir[]={0.63447094,-0.73509502,-0.2389183};
-		up[]={0.68793672,0.67796409,-0.25905156};
-		aside[]={-0.35240555,-1.4901161e-008,-0.9358474};
+		pos[]={856.77948,143.81946,12338.447};
+		dir[]={-0.019335531,-0.83591425,-0.54853398};
+		up[]={-0.029447559,0.54885143,-0.83540225};
+		aside[]={-0.99938816,2.4677774e-008,0.035228014};
 	};
 };
 binarizationWanted=0;
@@ -301,13 +301,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={853.69299,31.741652,12312.555};
-				angles[]={0,3.0698771,0};
+				position[]={857.09668,31.741652,12316.918};
+				angles[]={-0,3.0698771,0};
 			};
-			side="Empty";
-			flags=4;
+			side="Independent";
+			flags=6;
 			class Attributes
 			{
+				ammo=0.27973557;
 				fuel=0.03405622;
 				name="antiAir";
 				reportRemoteTargets=1;
@@ -330,7 +331,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item1
@@ -648,8 +662,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={860.72931,28.931438,12318.431};
-						angles[]={0,3.0662644,0};
+						position[]={853.69299,28.931438,12312.604};
+						angles[]={-0,3.0698771,0};
 					};
 					side="Independent";
 					flags=7;
@@ -830,6 +844,27 @@ class Mission
 			class Attributes
 			{
 			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=16;
+						item1=0;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
 			id=15;
 		};
 		class Item10
@@ -838,11 +873,12 @@ class Mission
 			position[]={857.34601,28.93,12319.383};
 			class Attributes
 			{
+				onActivation="_mag = magazines antiAir;" \n "hint format[""%1"", _mag];" \n "copyToClipboard format[""%1"", _mag];";
 				sizeA=5;
 				sizeB=5;
 				sizeC=5;
 				timeout[]={2,2,2};
-				activationBy="ANYPLAYER";
+				activationBy="ANY";
 				isRectangle=1;
 			};
 			id=17;
@@ -3075,7 +3111,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={835.87054,28.93,12294.763};
+				position[]={835.87097,28.93,12294.763};
 			};
 			id=181;
 			type="ModuleTaskSetState_F";
@@ -3103,7 +3139,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CREATED";
+							value="SUCCEEDED";
 						};
 					};
 				};
@@ -3113,17 +3149,16 @@ class Mission
 		class Item35
 		{
 			dataType="Trigger";
-			position[]={861.25702,28.93,12308.566};
+			position[]={857.26703,28.93,12306.939};
 			class Attributes
 			{
-				onActivation="_mag = currentMagazine antiAir;" \n "hint format[""%1"", _mag];";
 				sizeA=5;
 				sizeB=5;
 				sizeC=5;
-				activationBy="ANYPLAYER";
+				activationBy="ANY";
 				isRectangle=1;
 			};
-			id=183;
+			id=185;
 			type="EmptyDetectorArea10x10";
 		};
 	};
@@ -3179,7 +3214,7 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=176;
+				item0=185;
 				item1=181;
 				class CustomData
 				{
