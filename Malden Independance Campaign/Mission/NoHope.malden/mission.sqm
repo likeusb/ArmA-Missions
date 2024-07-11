@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={845.62665,47.200943,12312.991};
-		dir[]={0.7248413,-0.68883103,-0.010813868};
-		up[]={0.68875444,0.72492194,-0.01027549};
-		aside[]={-0.014917286,4.6566129e-010,-0.99988878};
+		pos[]={838.99158,58.977051,12315.559};
+		dir[]={0.63447094,-0.73509502,-0.2389183};
+		up[]={0.68793672,0.67796409,-0.25905156};
+		aside[]={-0.35240555,-1.4901161e-008,-0.9358474};
 	};
 };
 binarizationWanted=0;
@@ -853,7 +853,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={859.45752,28.93,12297.523};
+				position[]={856.82227,28.93,12298.172};
 			};
 			id=18;
 			type="ModuleTaskCreate_F";
@@ -868,7 +868,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -2503,7 +2503,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1002.456,0.00043392181,11707.164};
-			angle=1.8086145;
+			angle=1.8086143;
 			class Attributes
 			{
 				sizeA=5;
@@ -3042,7 +3042,7 @@ class Mission
 		class Item32
 		{
 			dataType="Trigger";
-			position[]={651.13202,28.92,12279.864};
+			position[]={691.02161,28.92,12326.766};
 			class Attributes
 			{
 				text="Initial trigger";
@@ -3113,10 +3113,10 @@ class Mission
 		class Item35
 		{
 			dataType="Trigger";
-			position[]={863.35498,28.93,12308.763};
+			position[]={861.25702,28.93,12308.566};
 			class Attributes
 			{
-				onActivation="hint format[""%1"", magazines antiAir];";
+				onActivation="_mag = currentMagazine antiAir;" \n "hint format[""%1"", _mag];";
 				sizeA=5;
 				sizeB=5;
 				sizeC=5;
