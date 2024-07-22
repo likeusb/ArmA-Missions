@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={781.3172,32.491573,12102.946};
-		dir[]={0.43741611,-0.41798121,0.79623872};
-		up[]={0.20125847,0.90844762,0.36635602};
-		aside[]={0.87647158,-2.5320332e-007,-0.48149329};
+		pos[]={779.46289,32.491573,12105.468};
+		dir[]={0.73091424,-0.5384292,0.41940618};
+		up[]={0.46701807,0.84266061,0.26798019};
+		aside[]={0.49770364,-3.1213858e-008,-0.86737019};
 	};
 };
 binarizationWanted=0;
@@ -203,10 +203,10 @@ class Mission
 		wavesForced=1;
 		windForced=1;
 		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
+		month=7;
+		day=1;
+		hour=4;
+		minute=26;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -684,7 +684,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={783.0799,29.442436,12108.704};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=7;
@@ -789,7 +789,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={781.03766,29.45455,12105.507};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=5;
@@ -894,7 +894,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={781.21399,29.441975,12108.065};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=5;
@@ -1000,7 +1000,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={780.97583,29.429373,12106.791};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=1;
@@ -1106,7 +1106,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={780.97296,29.445148,12109.93};
-						angles[]={0,1.750905,-0};
+						angles[]={0,1.750905,0};
 					};
 					side="West";
 					flags=5;
@@ -1211,7 +1211,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={779.04309,29.441004,12106.316};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=5;
@@ -1317,7 +1317,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={777.37061,29.414003,12108.854};
-						angles[]={0,1.5983399,-0};
+						angles[]={0,1.5983399,0};
 					};
 					side="West";
 					flags=5;
@@ -1422,7 +1422,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={778.54584,29.418474,12107.946};
-						angles[]={0,1.0280125,-0};
+						angles[]={0,1.0280125,0};
 					};
 					side="West";
 					flags=5;
@@ -1527,7 +1527,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={779.33484,29.459179,12105.299};
-						angles[]={0,1.133099,-0};
+						angles[]={0,1.133099,0};
 					};
 					side="West";
 					flags=5;
@@ -1632,7 +1632,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={779.98767,29.451214,12108.542};
-						angles[]={0,1.133099,-0};
+						angles[]={0,1.133099,0};
 					};
 					side="West";
 					flags=5;
@@ -1738,7 +1738,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={779.80237,29.432783,12107.449};
-						angles[]={0,1.133099,-0};
+						angles[]={0,1.133099,0};
 					};
 					side="West";
 					flags=5;
@@ -1843,7 +1843,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={778.76086,29.460567,12109.829};
-						angles[]={0,1.8089837,-0};
+						angles[]={0,1.8089837,0};
 					};
 					side="West";
 					flags=5;
@@ -1948,7 +1948,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={777.53613,29.407036,12106.976};
-						angles[]={0,1.133099,-0};
+						angles[]={0,1.133099,0};
 					};
 					side="West";
 					flags=5;
@@ -2054,7 +2054,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={775.80884,29.413523,12110.153};
-						angles[]={0,1.7485651,-0};
+						angles[]={0,1.7485651,0};
 					};
 					side="West";
 					flags=5;
@@ -2159,7 +2159,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={777.09003,29.455252,12104.933};
-						angles[]={0,1.133099,-0};
+						angles[]={0,1.133099,0};
 					};
 					side="West";
 					flags=5;
