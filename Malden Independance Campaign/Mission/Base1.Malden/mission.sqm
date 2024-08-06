@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9340.5557,98.524216,3935.7542};
-		dir[]={0.59614635,-0.30632707,0.74214107};
-		up[]={0.19183813,0.95192629,0.23881879};
-		aside[]={0.77962023,0,-0.62625259};
+		pos[]={11618.589,53.146084,4452.752};
+		dir[]={0.60664803,-0.70789874,-0.36179307};
+		up[]={0.60800135,0.70629638,-0.36259949};
+		aside[]={-0.5122149,1.7811544e-008,-0.85887665};
 	};
 };
 binarizationWanted=0;
@@ -84,15 +84,13 @@ addons[]=
 	"A3_Soft_F_Exp_LSV_02",
 	"A3_Boat_F_Boat_Armed_01",
 	"A3_Boat_F_Boat_Transport_01",
-	"ace_explosives",
-	"tfar_backpacks",
-	"tfar_handhelds"
+	"ace_explosives"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=43;
+		items=41;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -373,18 +371,6 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
-		{
-			className="tfar_backpacks";
-			name="tfar_backpacks";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
-		};
-		class Item42
-		{
-			className="tfar_handhelds";
-			name="tfar_handhelds";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
-		};
 	};
 };
 dlcs[]=
@@ -488,7 +474,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=181;
+		items=180;
 		class Item0
 		{
 			dataType="Logic";
@@ -1471,7 +1457,7 @@ class Mission
 			};
 			id=36;
 			type="Weapon_hgun_ACPC2_F";
-			atlOffset=0.72709846;
+			atlOffset=0.81262207;
 		};
 		class Item12
 		{
@@ -1487,7 +1473,7 @@ class Mission
 			};
 			id=37;
 			type="Weapon_arifle_Mk20_plain_F";
-			atlOffset=0.72711277;
+			atlOffset=0.81262207;
 		};
 		class Item13
 		{
@@ -1700,14 +1686,13 @@ class Mission
 						angles[]={0,1.990775,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="doStop this;";
 					};
 					id=307;
 					type="I_INDMDFF_Squad_Leader";
-					atlOffset=0.51837826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1922,14 +1907,13 @@ class Mission
 						angles[]={0,2.8921151,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="doStop this;";
 					};
 					id=309;
 					type="I_INDMDFF_Autorifleman";
-					atlOffset=0.51837826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2152,14 +2136,13 @@ class Mission
 						angles[]={0,2.053369,0};
 					};
 					side="Independent";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="doStop this;";
 					};
 					id=311;
 					type="I_INDMDFF_Rifleman_Light";
-					atlOffset=0.51837826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2424,12 +2407,12 @@ class Mission
 				angles[]={0,4.5800056,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=62;
 			type="Box_IND_Grenades_F";
-			atlOffset=0.51837826;
 		};
 		class Item21
 		{
@@ -3490,12 +3473,12 @@ class Mission
 				angles[]={0,4.5964293,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=91;
 			type="ACE_medicalSupplyCrate";
-			atlOffset=0.51837826;
 		};
 		class Item42
 		{
@@ -3506,12 +3489,12 @@ class Mission
 				angles[]={0,4.606884,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=92;
 			type="ACE_medicalSupplyCrate_advanced";
-			atlOffset=0.51837826;
 		};
 		class Item43
 		{
@@ -7614,7 +7597,6 @@ class Mission
 			};
 			id=237;
 			type="EmptyDetectorArea10x10";
-			atlOffset=0.51837826;
 		};
 		class Item71
 		{
@@ -7914,7 +7896,6 @@ class Mission
 			};
 			id=244;
 			type="ModuleTaskCreate_F";
-			atlOffset=0.51837826;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9583,8 +9564,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11716.585,14.115227,4515.1533};
-				angles[]={6.2288356,4.534348,0};
+				position[]={11716.909,14.09125,4514.7124};
+				angles[]={6.2288399,4.534348,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9596,6 +9577,7 @@ class Mission
 			};
 			id=295;
 			type="Land_VRGoggles_01_F";
+			atlOffset=1.335144e-005;
 		};
 		class Item118
 		{
@@ -9691,7 +9673,7 @@ class Mission
 			};
 			id=300;
 			type="Land_Notepad_F";
-			atlOffset=0.72708225;
+			atlOffset=0.81262207;
 		};
 		class Item121
 		{
@@ -9727,13 +9709,12 @@ class Mission
 						angles[]={0,3.0344954,0};
 					};
 					side="Independent";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 					};
 					id=313;
 					type="I_INDMDFF_Combat_Life_Saver";
-					atlOffset=0.51837826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9853,7 +9834,6 @@ class Mission
 			{
 			};
 			id=312;
-			atlOffset=0.51837826;
 		};
 		class Item123
 		{
@@ -12643,23 +12623,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9338.4912,3.9640548,3842.175};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=379;
-			type="TFAR_EAST_Radio_Crate";
-		};
-		class Item176
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={9339.1094,4.0615292,3840.8301};
 			};
 			side="Empty";
@@ -12673,7 +12636,7 @@ class Mission
 			type="Box_CSAT_Uniforms_F";
 			atlOffset=2.3841858e-007;
 		};
-		class Item177
+		class Item176
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12691,7 +12654,7 @@ class Mission
 			type="Box_CSAT_Uniforms_F";
 			atlOffset=2.3841858e-007;
 		};
-		class Item178
+		class Item177
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12726,7 +12689,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item179
+		class Item178
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12761,7 +12724,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item180
+		class Item179
 		{
 			dataType="Object";
 			class PositionInfo

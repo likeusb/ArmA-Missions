@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4954.8857,92.524048,3960.2769};
-		dir[]={0.393325,-0.4970876,0.77343613};
-		up[]={0.22532757,0.86769938,0.44308522};
-		aside[]={0.89136219,-1.1175871e-008,-0.45329508};
+		pos[]={4872.1069,360.12943,4520.7109};
+		dir[]={0.39020333,-0.4994761,0.7734884};
+		up[]={0.22497191,0.86631852,0.44595513};
+		aside[]={0.89283377,-7.1479008e-008,-0.45040891};
 	};
 };
 binarizationWanted=0;
@@ -333,7 +333,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -1691,6 +1691,7 @@ class Mission
 			};
 			id=75;
 			type="ModuleTaskCreate_F";
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2029,7 +2030,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4706.5698,101.76903,3609.6055};
-				angles[]={0,1.9542053,-0};
+				angles[]={0,1.9542053,0};
 			};
 			side="Empty";
 			flags=5;
@@ -2052,8 +2053,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5017.1968,134.07805,5140.6616};
-						angles[]={0,5.9828167,0};
+						position[]={5017.1968,134.078,5140.6616};
+						angles[]={0,5.9828143,0};
 					};
 					side="Independent";
 					flags=7;
@@ -2175,14 +2176,55 @@ class Mission
 					};
 					id=62;
 					type="I_soldier_F";
-					atlOffset=4.5776367e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=111;
-			atlOffset=4.5776367e-005;
 		};
 		class Item51
 		{
@@ -2754,7 +2796,7 @@ class Mission
 			};
 			id=119;
 			type="ModuleTaskCreate_F";
-			atlOffset=-7.6293945e-006;
+			atlOffset=-1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2914,6 +2956,7 @@ class Mission
 			};
 			id=120;
 			type="EmptyDetectorAreaR50";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item60
 		{

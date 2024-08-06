@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7410.3867,198.95567,7896.1064};
-		dir[]={-0.72435397,-0.65033269,0.22890098};
-		up[]={-0.62011528,0.75964057,0.19596075};
-		aside[]={0.3013213,1.846347e-007,0.95353091};
+		pos[]={7424.1206,239.49951,7902.7251};
+		dir[]={-0.51261729,-0.84354711,0.16022423};
+		up[]={-0.80513674,0.53704935,0.25165439};
+		aside[]={0.29832956,-2.6682392e-007,0.95447212};
 	};
 };
 binarizationWanted=0;
@@ -31,14 +31,13 @@ addons[]=
 	"A3_Modules_F_Effects",
 	"A3_Modules_F_Intel",
 	"A3_Structures_F_Walls",
-	"A3_Modules_F",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=4;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -64,13 +63,6 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -169,7 +161,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=27;
+		items=26;
 		class Item0
 		{
 			dataType="Group";
@@ -189,7 +181,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="z";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -2031,73 +2022,6 @@ class Mission
 		};
 		class Item21
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7371.1011,169.08771,7932.2939};
-			};
-			id=83;
-			type="ModuleCurator_F";
-			atlOffset=1.5258789e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="z";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=2;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item22
-		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -2144,7 +2068,7 @@ class Mission
 			};
 			id=84;
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Trigger";
 			position[]={7545.4731,190.84952,7768.6509};
@@ -2163,7 +2087,7 @@ class Mission
 			type="EmptyDetectorArea10x10";
 			atlOffset=-1.5258789e-005;
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Group";
 			side="West";
@@ -2440,7 +2364,7 @@ class Mission
 			};
 			id=113;
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Trigger";
 			position[]={8534.9756,114.3,7697.73};
@@ -2452,7 +2376,7 @@ class Mission
 			id=121;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo

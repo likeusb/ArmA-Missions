@@ -31,7 +31,6 @@ addons[]=
 	"A3_Characters_F_Exp_Civil",
 	"A3_Characters_F",
 	"A3_Weapons_F",
-	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F_Mark",
 	"A3_Boat_F_Boat_Transport_01",
 	"lambs_wp"
@@ -40,7 +39,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			className="A3_Weapons_F";
@@ -71,26 +70,19 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item5
-		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="lambs_wp";
 			name="LAMBS Danger WP";
@@ -196,7 +188,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=19;
 		class Item0
 		{
 			dataType="Object";
@@ -592,7 +584,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="z";
 						isPlayer=1;
 						class Inventory
 						{
@@ -636,7 +627,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -900,73 +904,6 @@ class Mission
 		};
 		class Item12
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={894.97803,18.857277,11949.388};
-			};
-			id=116;
-			type="ModuleCurator_F";
-			atlOffset=-1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="z";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=2;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item13
-		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -1020,6 +957,7 @@ class Mission
 					};
 					id=120;
 					type="O_HeavyGunner_F";
+					atlOffset=3.695488e-006;
 				};
 				class Item3
 				{
@@ -1108,7 +1046,7 @@ class Mission
 			};
 			id=117;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Group";
 			side="East";
@@ -1163,6 +1101,7 @@ class Mission
 					};
 					id=129;
 					type="O_HeavyGunner_F";
+					atlOffset=-4.9471855e-006;
 				};
 				class Item3
 				{
@@ -1195,6 +1134,7 @@ class Mission
 					};
 					id=131;
 					type="O_soldier_M_F";
+					atlOffset=-4.7981739e-006;
 				};
 				class Item5
 				{
@@ -1228,6 +1168,7 @@ class Mission
 					};
 					id=133;
 					type="O_Soldier_LAT_F";
+					atlOffset=-5.364418e-007;
 				};
 				class Item7
 				{
@@ -1251,7 +1192,7 @@ class Mission
 			};
 			id=126;
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1285,7 +1226,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1319,7 +1260,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1353,7 +1294,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1387,7 +1328,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo

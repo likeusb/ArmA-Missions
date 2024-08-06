@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=521;
+	toggles=1545;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=79;
+		nextID=81;
 	};
 	class Camera
 	{
@@ -51,7 +51,6 @@ addons[]=
 	"lambs_wp",
 	"A3_Soft_F_MRAP_02",
 	"ace_explosives",
-	"A3_Modules_F_Curator_Curator",
 	"A3_Weapons_F_Enoch",
 	"A3_Structures_F_Heli_Civ_Constructions",
 	"A3_Rocks_F_Sharp",
@@ -63,7 +62,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=25;
 		class Item0
 		{
 			className="A3_Boat_F";
@@ -201,39 +200,32 @@ class AddonsMetaData
 		};
 		class Item20
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item21
-		{
 			className="A3_Weapons_F_Enoch";
 			name="Arma 3 Contact Platform - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item23
 		{
 			className="spectrumDeviceFunctionality_signals";
 			name="spectrumDeviceFunctionality signals";
 			author="Scofer";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
@@ -1203,7 +1195,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=37;
+		items=38;
 		class Item0
 		{
 			dataType="Object";
@@ -1258,7 +1250,6 @@ class Mission
 					{
 						skill=1;
 						rank="SERGEANT";
-						name="z";
 						isPlayer=1;
 						class Inventory
 						{
@@ -1418,7 +1409,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -1470,7 +1461,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -2536,73 +2527,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11290.838,26.944145,4058.4514};
-				angles[]={6.0612998,0,6.0303168};
-			};
-			id=43;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="z";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=2;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item12
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={11325.653,33.23,4133.2632};
 			};
 			id=46;
@@ -2755,7 +2679,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2774,7 +2698,7 @@ class Mission
 			type="Weapon_hgun_esd_01_antenna_01_F";
 			atlOffset=0.93799973;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2792,7 +2716,7 @@ class Mission
 			id=53;
 			type="Land_ToolTrolley_02_F";
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Trigger";
 			position[]={11321.982,33.23,4130.5679};
@@ -2805,7 +2729,7 @@ class Mission
 			id=54;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2845,7 +2769,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3002,7 +2926,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3042,7 +2966,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3199,7 +3123,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3356,7 +3280,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Trigger";
 			position[]={11314.11,33.23,4133.9531};
@@ -3370,7 +3294,7 @@ class Mission
 			id=61;
 			type="EmptyDetector";
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3410,7 +3334,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Trigger";
 			position[]={11315.66,33.23,4140.0181};
@@ -3424,7 +3348,7 @@ class Mission
 			id=63;
 			type="EmptyDetector";
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3441,7 +3365,7 @@ class Mission
 			id=64;
 			type="Land_SharpStone_02";
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3481,7 +3405,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3534,7 +3458,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3576,7 +3500,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3594,7 +3518,7 @@ class Mission
 			type="Land_TTowerBig_2_F";
 			atlOffset=0.14099884;
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3751,7 +3675,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3791,7 +3715,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3831,7 +3755,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3871,7 +3795,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Trigger";
 			position[]={11314.468,33.23,4123.3618};
@@ -3886,7 +3810,7 @@ class Mission
 			id=75;
 			type="EmptyDetector";
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4043,7 +3967,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Trigger";
 			position[]={9723.5928,38.889999,3911.425};
@@ -4058,7 +3982,7 @@ class Mission
 			id=77;
 			type="EmptyDetectorAreaR250";
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4097,6 +4021,33 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item36
+		{
+			dataType="Trigger";
+			position[]={11313.414,33.23,4119.561};
+			class Attributes
+			{
+				onActivation="saveGame";
+				activationBy="WEST";
+			};
+			id=79;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item37
+		{
+			dataType="Trigger";
+			position[]={9741.7822,38.882,3926.853};
+			class Attributes
+			{
+				onActivation="saveGame";
+				sizeA=139.83701;
+				sizeB=144.526;
+				activationBy="ANYPLAYER";
+			};
+			id=80;
+			type="EmptyDetectorAreaR250";
+			atlOffset=-0.0079994202;
 		};
 	};
 	class Connections
