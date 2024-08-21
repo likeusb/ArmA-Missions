@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=305;
+		nextID=306;
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=15;
 	};
 	class Camera
 	{
-		pos[]={5112.1265,86.583763,3746.0703};
-		dir[]={0.54591721,-0.49162897,-0.67843604};
-		up[]={0.30820766,0.87080479,-0.38302362};
-		aside[]={-0.77909082,0,-0.62691116};
+		pos[]={5109.1431,76.928085,3720.467};
+		dir[]={0.66215378,-0.54691964,0.51228058};
+		up[]={0.43257445,0.83718497,0.33466467};
+		aside[]={0.61190832,-1.4901161e-008,-0.79092866};
 	};
 };
 binarizationWanted=0;
@@ -388,7 +388,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=55;
+		items=56;
 		class Item0
 		{
 			dataType="Layer";
@@ -4771,6 +4771,24 @@ class Mission
 			id=304;
 			type="EmptyDetector";
 			atlOffset=-3.8146973e-006;
+		};
+		class Item55
+		{
+			dataType="Trigger";
+			position[]={5121.8662,64.120689,3731.4961};
+			angle=2.3806989;
+			class Attributes
+			{
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				activationBy="ANYPLAYER";
+				type="LOOSE";
+				isRectangle=1;
+			};
+			id=305;
+			type="EmptyDetectorArea10x10";
+			atlOffset=4.1489983;
 		};
 	};
 };
