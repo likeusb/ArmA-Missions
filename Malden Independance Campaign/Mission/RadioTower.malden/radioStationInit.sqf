@@ -1,2 +1,0 @@
-scriptConfig enableSimulation true;
-saveGame;
