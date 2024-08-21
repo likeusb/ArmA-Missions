@@ -1,0 +1,35 @@
+class Campaign 
+{
+    firstBattle = ALostCause;
+
+    name = "Malden Independance Campaign";
+    briefingName = "Malden Independance Campaign";
+    disableMP = 1;
+    author = "Likeusb";
+
+    class ALostCause
+    {
+        firstMission = Mission1;
+        name = "A Lost cause.";
+        cutscene = ;
+        end1 = ;
+
+        class Mission1
+        {
+            template = Civ.Malden;
+            end1 = Mission2;
+        }
+
+        class Mission2
+        {
+            template = checkpoint.Malden;
+            end1 = Mission3;
+        }
+
+        class Mission3
+        {
+            template = Base1.Malden;
+            end1 = Mission4;
+        }
+    }
+}
