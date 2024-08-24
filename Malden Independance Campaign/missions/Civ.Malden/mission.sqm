@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7216.1787,261.4642,7954.9951};
-		dir[]={0.78633285,-0.60881221,0.10505673};
-		up[]={0.60345829,0.79330873,0.080624461};
-		aside[]={0.13242698,-2.3806933e-007,-0.99119753};
+		pos[]={7205.6094,739.84961,8015.9375};
+		dir[]={0.44215813,-0.85144639,-0.28205314};
+		up[]={0.71783918,0.52443022,-0.45790944};
+		aside[]={-0.53780329,-1.5646219e-007,-0.84308153};
 	};
 };
 binarizationWanted=0;
@@ -173,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=27;
+		items=26;
 		class Item0
 		{
 			dataType="Group";
@@ -1677,7 +1677,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7397.2798,171.06195,7901.5679};
-			angle=1.9223056;
+			angle=1.9223055;
 			class Attributes
 			{
 				text="Assigns mission to escape";
@@ -2035,19 +2035,20 @@ class Mission
 		class Item21
 		{
 			dataType="Trigger";
-			position[]={7619.6558,202.0618,7876.0566};
-			angle=2.29409;
+			position[]={7383.0552,178.67601,7865.4805};
+			angle=2.2940958;
 			class Attributes
 			{
-				sizeA=13.004639;
-				sizeB=234.97607;
+				sizeA=138.9882;
+				sizeB=260.31253;
+				activationType="NOT PRESENT";
 				activationBy="ANYPLAYER";
 				type="END1";
 				isRectangle=1;
 			};
 			id=121;
 			type="EmptyDetectorAreaR50";
-			atlOffset=7.9153442;
+			atlOffset=4.718689;
 		};
 		class Item22
 		{
@@ -2091,23 +2092,6 @@ class Mission
 			};
 		};
 		class Item23
-		{
-			dataType="Trigger";
-			position[]={7655.5313,194.99005,7557.7256};
-			angle=0.67401916;
-			class Attributes
-			{
-				sizeA=13.004639;
-				sizeB=234.97607;
-				activationBy="ANYPLAYER";
-				type="END1";
-				isRectangle=1;
-			};
-			id=123;
-			type="EmptyDetectorAreaR50";
-			atlOffset=7.9155426;
-		};
-		class Item24
 		{
 			dataType="Group";
 			side="East";
@@ -2155,7 +2139,7 @@ class Mission
 			};
 			id=84;
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Group";
 			side="East";
@@ -2168,7 +2152,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7305.1426,167.57144,7972.1147};
-						angles[]={-0,2.8840775,0};
+						angles[]={0,2.8840775,0};
 					};
 					side="East";
 					flags=6;
@@ -2184,15 +2168,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7305.1426,169.30125,7972.1147};
-						angles[]={-0,2.8840775,0};
+						angles[]={0,2.8840775,0};
 					};
 					side="East";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=127;
 					type="O_Soldier_F";
+					atlOffset=1.7298126;
 				};
 			};
 			class Attributes
@@ -2232,13 +2216,13 @@ class Mission
 			};
 			id=124;
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7305.1426,169.29982,7972.0649};
-				angles[]={-0,2.8840775,0};
+				angles[]={0,2.8840775,0};
 			};
 			side="East";
 			flags=6;
@@ -2253,11 +2237,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=5;
+			nextID=4;
 		};
 		class Links
 		{
-			items=5;
+			items=4;
 			class Item0
 			{
 				linkID=0;
@@ -2292,16 +2276,6 @@ class Mission
 			{
 				linkID=3;
 				item0=121;
-				item1=122;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item4
-			{
-				linkID=4;
-				item0=123;
 				item1=122;
 				class CustomData
 				{

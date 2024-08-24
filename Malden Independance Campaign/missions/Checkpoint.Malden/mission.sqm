@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=17;
 	};
 	class Camera
 	{
-		pos[]={5109.1431,76.928085,3720.467};
-		dir[]={0.66215378,-0.54691964,0.51228058};
-		up[]={0.43257445,0.83718497,0.33466467};
-		aside[]={0.61190832,-1.4901161e-008,-0.79092866};
+		pos[]={5115.6152,82.136406,3710.0771};
+		dir[]={0.2248657,-0.76419437,0.60452127};
+		up[]={0.26642489,0.64498317,0.71624798};
+		aside[]={0.93726009,-8.9406967e-008,-0.3486352};
 	};
 };
 binarizationWanted=0;
@@ -4764,9 +4764,9 @@ class Mission
 			{
 				text="Ending mission";
 				condition="!alive player;";
+				onActivation="endMission ""END1"";";
 				sizeA=0;
 				sizeB=0;
-				type="END1";
 			};
 			id=304;
 			type="EmptyDetector";
@@ -4776,7 +4776,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5121.8662,64.120689,3731.4961};
-			angle=2.3806989;
+			angle=2.3806987;
 			class Attributes
 			{
 				sizeA=5;
