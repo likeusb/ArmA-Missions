@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=123;
+		nextID=128;
 	};
 	class Camera
 	{
-		pos[]={7424.1206,239.49951,7902.7251};
-		dir[]={-0.51261729,-0.84354711,0.16022423};
-		up[]={-0.80513674,0.53704935,0.25165439};
-		aside[]={0.29832956,-2.6682392e-007,0.95447212};
+		pos[]={7216.1787,261.4642,7954.9951};
+		dir[]={0.78633285,-0.60881221,0.10505673};
+		up[]={0.60345829,0.79330873,0.080624461};
+		aside[]={0.13242698,-2.3806933e-007,-0.99119753};
 	};
 };
 binarizationWanted=0;
@@ -31,13 +31,14 @@ addons[]=
 	"A3_Modules_F_Effects",
 	"A3_Modules_F_Intel",
 	"A3_Structures_F_Walls",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Soft_F_Exp_LSV_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -66,7 +67,18 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item4
+		{
+			className="A3_Soft_F_Exp";
+			name="Arma 3 Apex - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Expansion"
 };
 randomSeed=9154778;
 class ScenarioData
@@ -161,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			dataType="Group";
@@ -1665,14 +1677,14 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7397.2798,171.06195,7901.5679};
-			angle=1.9223049;
+			angle=1.9223056;
 			class Attributes
 			{
 				text="Assigns mission to escape";
-				condition="!this";
 				sizeA=5.8899999;
 				sizeB=1.985;
 				sizeC=5;
+				timeout[]={1,1,1};
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
@@ -2022,6 +2034,81 @@ class Mission
 		};
 		class Item21
 		{
+			dataType="Trigger";
+			position[]={7619.6558,202.0618,7876.0566};
+			angle=2.29409;
+			class Attributes
+			{
+				sizeA=13.004639;
+				sizeB=234.97607;
+				activationBy="ANYPLAYER";
+				type="END1";
+				isRectangle=1;
+			};
+			id=121;
+			type="EmptyDetectorAreaR50";
+			atlOffset=7.9153442;
+		};
+		class Item22
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8457.9707,113.10839,7793.0991};
+				angles[]={0.5872637,0,5.6343303};
+			};
+			id=122;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item23
+		{
+			dataType="Trigger";
+			position[]={7655.5313,194.99005,7557.7256};
+			angle=0.67401916;
+			class Attributes
+			{
+				sizeA=13.004639;
+				sizeB=234.97607;
+				activationBy="ANYPLAYER";
+				type="END1";
+				isRectangle=1;
+			};
+			id=123;
+			type="EmptyDetectorAreaR50";
+			atlOffset=7.9155426;
+		};
+		class Item24
+		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -2068,364 +2155,109 @@ class Mission
 			};
 			id=84;
 		};
-		class Item22
-		{
-			dataType="Trigger";
-			position[]={7545.4731,190.84952,7768.6509};
-			class Attributes
-			{
-				text="Triggers vic to pass by";
-				condition="!this";
-				sizeA=230.894;
-				sizeB=171.716;
-				sizeC=101.405;
-				activationBy="ANYPLAYER";
-				type="SWITCH";
-				isRectangle=1;
-			};
-			id=101;
-			type="EmptyDetectorArea10x10";
-			atlOffset=-1.5258789e-005;
-		};
-		class Item23
+		class Item25
 		{
 			dataType="Group";
-			side="West";
+			side="East";
 			class Entities
 			{
-				items=8;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7769.4878,199.99144,7525.0176};
-						angles[]={0,2.7740612,0};
+						position[]={7305.1426,167.57144,7972.1147};
+						angles[]={-0,2.8840775,0};
 					};
-					side="West";
-					flags=7;
+					side="East";
+					flags=6;
 					class Attributes
 					{
 					};
-					id=114;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
+					id=126;
+					type="O_Soldier_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7763.3315,199.99144,7525.6123};
-						angles[]={0,2.7740612,0};
+						position[]={7305.1426,169.30125,7972.1147};
+						angles[]={-0,2.8840775,0};
 					};
-					side="West";
-					flags=5;
+					side="East";
+					flags=4;
 					class Attributes
 					{
 					};
-					id=106;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7759.0483,199.99144,7524.1621};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=110;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7762.9214,199.99144,7520.7046};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=112;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7759.3594,199.99144,7528.5981};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=118;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7763.4385,199.99144,7529.2217};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=108;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7768.8643,199.99144,7529.6245};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=116;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7765.6045,199.99144,7535.5649};
-						angles[]={0,2.7740612,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=120;
-					type="C_man_polo_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_disableAI_move";
-							expression="if (_value) then {[_this, 'MOVE'] remoteExec ['disableAI', _this]}";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
+					id=127;
+					type="O_Soldier_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=113;
-		};
-		class Item24
-		{
-			dataType="Trigger";
-			position[]={8534.9756,114.3,7697.73};
-			class Attributes
+			class CrewLinks
 			{
-				activationBy="ANYPLAYER";
-				type="END1";
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=126;
+						item1=125;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=127;
+						item1=125;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
 			};
-			id=121;
-			type="EmptyDetectorAreaR50";
+			id=124;
 		};
-		class Item25
+		class Item26
 		{
-			dataType="Logic";
+			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8537.377,114.3,7712.0942};
+				position[]={7305.1426,169.29982,7972.0649};
+				angles[]={-0,2.8840775,0};
 			};
-			id=122;
-			type="ModuleTaskSetState_F";
-			class CustomAttributes
+			side="East";
+			flags=6;
+			class Attributes
 			{
-				class Attribute0
-				{
-					property="ModuleTaskSetState_F_ShowNotification";
-					expression="_this setVariable ['ShowNotification',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleTaskSetState_F_State";
-					expression="_this setVariable ['State',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="SUCCEEDED";
-						};
-					};
-				};
-				nAttributes=2;
 			};
+			id=125;
+			type="O_LSV_02_armed_F";
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=4;
+			nextID=5;
 		};
 		class Links
 		{
-			items=4;
+			items=5;
 			class Item0
 			{
 				linkID=0;
@@ -2460,6 +2292,16 @@ class Mission
 			{
 				linkID=3;
 				item0=121;
+				item1=122;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=123;
 				item1=122;
 				class CustomData
 				{
