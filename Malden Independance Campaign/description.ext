@@ -1,140 +1,37 @@
 class Campaign 
 {
-    firstBattle = ALostCause;
-
+    firstmission = "Mission1";
     name = "Malden Independance Campaign";
-    briefingName = "Malden Independance Campaign";
-    disableMP = 1;
     author = "Likeusb";
 
-    class ALostCause
+    class Missions
     {
+        name = "Rough Start";
         firstMission = Mission1;
-        name = "A Lost cause.";
-        cutscene = ;
-        end1 = NATO;
+        end1 = ;
+        end2 = ;
+        end3 = ;
+        end4 = ;
+        end5 = ;
+        end6 = ;
+        lost = ;
 
         class Mission1
         {
             template = Civ.Malden;
-            end1 = Mission2;
-            name = "test";
-        };
+            end1 = "Mission2";
+        }
 
         class Mission2
         {
             template = checkpoint.Malden;
-            end1 = Mission3;
-        };
+            end1 = "Mission3";
+        }
 
         class Mission3
-        {
-            template = IslandCivDef.Malden;
-            end1 = Mission4;
-        };
-
-        class Mission4
         {
             template = Base1.Malden;
-            end1 = Mission5;
-        };
-
-        class Mission5
-        {
-            template = Attack.Malden;
-            end1 = Mission6;
-        };
-
-        class Mission6
-        {
-            template = Base2.Malden;
-            end1 = Mission7;
-        };
-
-        class Mission7
-        {
-            template = RadioTower.Malden;
-            end1 = Mission8;
-        };
-
-        class Mission8
-        {
-            template = ArtyTakeover.Malden;
-            end1 = Mission9;
-        };
-
-        class Mission9
-        {
-            template = supplyRaid.Malden;
-            end1 = Mission10;
-        };
-
-        class Mission10
-        {
-            template = LRShot.Malden;
-            end1 = Mission11;
-        };
-
-        class Mission11
-        {
-            template = cityAssault.Malden;
-            end1 = Mission12;
-        };
-
-        class Mission12
-        {
-            template = Preparation.Malden;
-            end1 = Mission13;
-        };
-
-        class Mission13
-        {
-            template = NoHope.Malden;
-            end1 = 
-        };
-    };
-
-    class NATO
-    {
-        firstMission = Mission1;
-        name = "No longer alone.";
-        cutscene = ;
-        end1 = ;
-
-        class Mission1
-        {
-            template = Base3.Malden;
-            end1 = Mission2;   
-        };
-
-        class Mission2
-        {
-            template = SEIslandAttack.Malden;
-            end1 = Mission3;
-        };
-
-        class Mission3
-        {
-            template = LePort.Malden;
-            end1 = Mission4;
-        };
-
-        class Mission4
-        {
-            template = Port1.Malden;
-            end1 = Mission5;
-        };
-
-        class Mission5
-        {
-            template = Port2.Malden;
-            end1 = Mission6;
-        };
-
-        class Mission6
-        {
-            template = LastStand.Malden;
-            end1 = ;
-        };
-    };
-};
+            end1 = "Mission4";
+        }
+    }
+}

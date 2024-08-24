@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=219;
+		nextID=221;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={5122.1855,391.2113,4727.5854};
-		dir[]={-0.29618341,-0.34149614,0.89200497};
-		up[]={-0.10761616,0.93988115,0.32410312};
-		aside[]={0.94905645,5.5675628e-008,0.31512803};
+		pos[]={4487.2231,734.5011,6934.0991};
+		dir[]={-0.77848166,-0.53903908,0.32156366};
+		up[]={-0.49820921,0.84228075,0.20579286};
+		aside[]={0.38177726,1.4901161e-008,0.9242543};
 	};
 };
 binarizationWanted=0;
@@ -81,13 +81,14 @@ addons[]=
 	"A3_Characters_F_Exp",
 	"ace_explosives",
 	"A3_Modules_F",
-	"A3_Structures_F_Mil_Helipads"
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Soft_F_Offroad_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -332,6 +333,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item36
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -479,7 +487,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=35;
 		class Item0
 		{
 			dataType="Layer";
@@ -1651,7 +1659,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5451.9653,501.52756,6336.3403};
+						position[]={5451.0586,501.12076,6335.6851};
 						angles[]={0,4.9591584,0};
 					};
 					side="Independent";
@@ -1662,7 +1670,6 @@ class Mission
 					};
 					id=73;
 					type="I_INDMDFF_Squad_Leader";
-					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2599,7 +2606,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -2741,8 +2748,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4284.9448,403.53723,7050.2485};
-				angles[]={0.035185181,0,0.036785569};
+				position[]={4284.9448,403.53723,7050.249};
+				angles[]={0.035185836,0,0.036791541};
 			};
 			id=106;
 			type="ModuleTaskSetState_F";
@@ -2770,7 +2777,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CREATED";
+							value="SUCCEEDED";
 						};
 					};
 				};
@@ -2784,7 +2791,7 @@ class Mission
 			class Attributes
 			{
 				text="Initial detection for opfor not present";
-				onActivation="saveGame";
+				onActivation="saveGame;" \n "hint ""You must now hold this position for two minutes.""";
 				sizeA=250;
 				sizeB=250;
 				activationType="NOT PRESENT";
@@ -4135,16 +4142,50 @@ class Mission
 			type="EmptyDetectorAreaR50";
 			atlOffset=-0.14099121;
 		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5452.0679,503.89011,6340.4541};
+				angles[]={6.1206336,4.665719,0.27077958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=219;
+			type="B_G_Offroad_01_AT_F";
+			atlOffset=0.00021362305;
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5450.5693,504.7038,6343.957};
+				angles[]={6.1206336,4.3831258,0.27077958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=220;
+			type="B_G_Offroad_01_armed_F";
+			atlOffset=3.0517578e-005;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=10;
+			nextID=11;
 		};
 		class Links
 		{
-			items=10;
+			items=11;
 			class Item0
 			{
 				linkID=0;
@@ -4240,6 +4281,16 @@ class Mission
 				linkID=9;
 				item0=216;
 				item1=217;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=108;
+				item1=215;
 				class CustomData
 				{
 					type="Sync";
