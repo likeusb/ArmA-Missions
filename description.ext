@@ -1,0 +1,92 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 8;
+};
+
+loadScreen = "hehe.jpg";
+author = Likeusb;
+onLoadName = Covert Rescue;
+OnLoadMission = "Never gonna give you up, never gonna let you down, never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye, never gonna tell a lie or hurt you";
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+respawnOnStart = 0;
+
+
+
+class CfgORBAT
+{
+	class 1stInfantryHQ
+	{
+		id = 1;
+		idType = 0;
+		type = "HQ";
+		side = "Resistance";
+		size = "Batallion";
+		commander = "Terrence";
+		commanderRank = "General";
+		text = "Malden Defence Force %1 %2 %3";
+		textShort = "%1 %2 %3";
+		assets[] = {
+			{ "I_INDMDFF_PO_30_Orca_Unarmed", 1},
+			{ "I_INDMDFF_Zamak_Transport", 2}
+		};
+		description = "The HQ responsible for the entirety of the MDF. While their HQ may seem vulnerable, the approach to it is near impossible due to the heavy mining that the MDF have conducted around the area.";
+		subordinates[] = { "1stInfantry", "1stAirborne", "1stAerial" };
+
+	};
+
+	class 1stInfantry 
+	{
+		id = 1;
+		idType = 0;
+		type = "MotorizedInfantry";
+		size = "Battalion";
+		side = "Resistance";
+		commander = "Terrence";
+		commanderRank = "General";
+		text = "Malden Defence Force %1 %2 %3";
+		textShort = "%1 %2 %3";
+		description = "The MDF 1st Infantry Battalion is the primary force of the MDF. They are a young force, being formed during the first Malden Civil warthat happened three years ago. Most have very little to no morale after seeing the true face of the MDF. Some, however, will fight to the death. Theirequipment is lacking, but it is enough to put the rebels on the defensive.";
+		assets[] = {
+			{ "I_INDMDFF_Zamak_Transport", 2},
+	};
+	};
+
+	class 1stAirborne {
+		id = 1;
+		idType = 0;
+		type = "Airborne";
+		side = "Resistance";
+		size = "Squad";
+		commander = "Harrison";
+		commanderRank = "Lieutenant";
+		text = "Malden Special Forces %1 %2";
+		textShort = "%1 %2";
+		description = "Formed after the first Malden Civil War. They were initially formed as a PMC tasked with clandestine operations to have the uniqueability to commit warcrimes that the MDF could not deface themselves with. Following the victory of the Civil War, they were officially integrated intothe MDF as a special forces unit. A shared PO-30 Orca between them and the HQ remains the primary form of transport, however, they can request vehiclesfrom the 1st Infantry Batallion if necessary.";
+		assets[] = {
+			{ "I_INDMDFF_PO_30_Orca_Unarmed", 1}
+		};
+	};
+
+	class 1stAerial {
+		id = 1;
+		idType = 0;
+		type = "Airborne";
+		side = "Resistance";
+		size = "Section";
+		commander = "Thomas";
+		commanderRank = "Captain";
+		text = "Malden Aerial Wing"
+		textShort = "%1 %2";
+		description = "While the armoured vehicles belonging to the MDF are gone following last year's Civil War, their Air Force remains as strong as before.While they may not have many aircraft, it is very difficult to fight against them as the pilots are very motivated. Fighting against them is a bigmistake and most rebels flee when the Air Force joins the fight.";
+		assets[] = {
+			{ "I_INDMDFF_Mi_48_Kajman", 2},
+			{ "I_INDMDFF_WY_55_Hellcat", 1},
+			{ "I_INDMDFF_PO_30_Orca", 1},
+			{ "I_INDMDFF_CH_49_Mohawk", 1}
+		};
+	};
+}
