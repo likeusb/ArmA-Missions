@@ -91,13 +91,13 @@ class Campaign
         class Mission13
         {
             template = NoHope.Malden;
-            end1 = NATO;
+            end1 = ;
         };
     };
 
     class NATO
     {
-        firstMission = Mission1;
+        firstMission = Mission2;
         name = "No longer alone.";
         cutscene = ;
         end1 = ;

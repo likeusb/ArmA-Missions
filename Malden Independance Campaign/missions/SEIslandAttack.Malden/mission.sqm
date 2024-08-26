@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1545;
+	toggles=521;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11320.454,61.977764,4159.7402};
-		dir[]={-0.24464895,-0.68726844,-0.68396562};
-		up[]={-0.23146845,0.72640353,-0.6471169};
-		aside[]={-0.94157803,0,0.33679482};
+		pos[]={9745.4883,196.15334,3808.4607};
+		dir[]={0.13143295,-0.76650023,0.62865752};
+		up[]={0.15686052,0.6422413,0.7502805};
+		aside[]={0.97884011,-4.156027e-008,-0.20464545};
 	};
 };
 binarizationWanted=0;
@@ -1205,6 +1205,7 @@ class Mission
 				angles[]={0,5.8170252,0};
 			};
 			side="West";
+			flags=2;
 			class Attributes
 			{
 			};
@@ -1241,11 +1242,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11276.789,31.818836,4178.541};
+						position[]={11423.202,0.0014381409,3690.2283};
 						angles[]={0,2.1552546,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=1;
@@ -1372,6 +1373,7 @@ class Mission
 					};
 					id=2;
 					type="B_Soldier_TL_F";
+					atlOffset=23.196844;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1721,14 +1723,24 @@ class Mission
 			{
 				class LinkIDProvider
 				{
-					nextID=4;
+					nextID=5;
 				};
 				class Links
 				{
-					items=4;
+					items=5;
 					class Item0
 					{
 						linkID=0;
+						item0=2;
+						item1=0;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
 						item0=3;
 						item1=0;
 						class CustomData
@@ -1737,9 +1749,9 @@ class Mission
 							turretPath[]={0};
 						};
 					};
-					class Item1
+					class Item2
 					{
-						linkID=1;
+						linkID=2;
 						item0=4;
 						item1=0;
 						class CustomData
@@ -1748,9 +1760,9 @@ class Mission
 							turretPath[]={1};
 						};
 					};
-					class Item2
+					class Item3
 					{
-						linkID=2;
+						linkID=3;
 						item0=5;
 						item1=0;
 						class CustomData
@@ -1759,9 +1771,9 @@ class Mission
 							turretPath[]={2};
 						};
 					};
-					class Item3
+					class Item4
 					{
-						linkID=3;
+						linkID=4;
 						item0=6;
 						item1=0;
 						class CustomData
@@ -1773,6 +1785,7 @@ class Mission
 				};
 			};
 			id=1;
+			atlOffset=23.196844;
 		};
 		class Item2
 		{
@@ -3934,7 +3947,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=3;
 						};
 					};
 				};
@@ -3974,6 +3987,7 @@ class Mission
 			class Attributes
 			{
 				text="Base dead";
+				onActivation="endMission ""END1"";";
 				sizeA=250;
 				sizeB=250;
 				activationType="NOT PRESENT";

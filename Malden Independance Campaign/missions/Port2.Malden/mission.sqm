@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=69;
+		nextID=76;
 	};
 	class Camera
 	{
-		pos[]={3515.7473,60.610874,3224.147};
-		dir[]={0.62901396,-0.64094543,-0.43992558};
-		up[]={0.52523416,0.76758641,-0.36734343};
-		aside[]={-0.57312751,3.1432137e-009,-0.81946868};
+		pos[]={3665.3599,14.023292,3128.7419};
+		dir[]={0.089743823,-0.63650578,-0.76607096};
+		up[]={0.074063979,0.77124065,-0.63222194};
+		aside[]={-0.9932369,-5.6112185e-008,-0.11635819};
 	};
 };
 binarizationWanted=0;
@@ -56,13 +56,14 @@ addons[]=
 	"A3_Weapons_F_Explosives",
 	"ace_explosives",
 	"A3_Boat_F_Beta_SDV_01",
-	"A3_Modules_F_Intel"
+	"A3_Modules_F_Intel",
+	"A3_Characters_F_Mark"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Boat_F_Gamma";
@@ -232,7 +233,18 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item25
+		{
+			className="A3_Characters_F_Mark";
+			name="Arma 3 Marksmen - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Mark"
 };
 randomSeed=11074087;
 class ScenarioData
@@ -263,7 +275,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=27;
+		items=29;
 		class Item0
 		{
 			dataType="Object";
@@ -700,6 +712,7 @@ class Mission
 					};
 					id=25;
 					type="B_diver_F";
+					atlOffset=-4.5776367e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1884,164 +1897,6 @@ class Mission
 		};
 		class Item25
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3548.1033,-6.3985972,3195.8394};
-			};
-			id=67;
-			type="ModuleTaskCreate_F";
-			atlOffset=10.737211;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleTaskCreate_F_Destination";
-					expression="_this setVariable ['Destination',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleTaskCreate_F_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Default";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleTaskCreate_F_ShowNotification";
-					expression="_this setVariable ['ShowNotification',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleTaskCreate_F_Marker";
-					expression="_this setVariable ['Marker',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleTaskCreate_F_Title";
-					expression="_this setVariable ['Title',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="pos1";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleTaskCreate_F_Description";
-					expression="_this setVariable ['Description',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ModuleTaskCreate_F_ID";
-					expression="_this setVariable ['ID',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="ModuleTaskCreate_F_AlwaysVisible";
-					expression="_this setVariable ['AlwaysVisible',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="ModuleTaskCreate_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=3;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="ModuleTaskCreate_F_State";
-					expression="_this setVariable ['State',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="ASSIGNED";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="ModuleTaskCreate_F_IDParent";
-					expression="_this setVariable ['IDParent',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				nAttributes=11;
-			};
-		};
-		class Item26
-		{
 			dataType="Trigger";
 			position[]={3686.6741,15.724708,3249.927};
 			class Attributes
@@ -2055,16 +1910,150 @@ class Mission
 			type="EmptyDetectorAreaR250";
 			atlOffset=9.5367432e-007;
 		};
+		class Item26
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3713.3381,15.350281,3145.0679};
+			};
+			id=69;
+			type="ModuleTaskSetState_F";
+			atlOffset=2.3841858e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="CREATED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3552.8369,6.7721219,3107.863};
+						angles[]={0,3.5548742,-0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=71;
+					type="O_Sharpshooter_F";
+					atlOffset=0.2039957;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3555.7439,6.7721233,3106.5774};
+						angles[]={0,3.4991791,-0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=72;
+					type="O_soldier_M_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=70;
+			atlOffset=0.2039957;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3548.1521,6.7558346,3130.4424};
+						angles[]={0,5.1314678,-0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=74;
+					type="O_Sharpshooter_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3547.3162,6.7558346,3127.5781};
+						angles[]={0,4.9720817,-0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=75;
+					type="O_soldier_M_F";
+					atlOffset=0.2039957;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=73;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=3;
 		};
 		class Links
 		{
-			items=2;
+			items=3;
 			class Item0
 			{
 				linkID=0;
@@ -2083,6 +2072,16 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=69;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};

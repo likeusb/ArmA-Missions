@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=140;
+		nextID=141;
 	};
 	class Camera
 	{
-		pos[]={7704.0259,151.32146,3231.2334};
-		dir[]={0.4505724,-0.84282088,0.29435509};
-		up[]={0.70559728,0.53818935,0.46096078};
-		aside[]={0.54692674,-2.2817403e-007,-0.83718461};
+		pos[]={7691.1147,226.74919,3251.7346};
+		dir[]={0.39860144,-0.91305417,0.086366169};
+		up[]={0.89235002,0.40783465,0.1933483};
+		aside[]={0.21176149,-4.6554487e-007,-0.97732633};
 	};
 };
 binarizationWanted=0;
@@ -1143,7 +1143,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			dataType="Object";
@@ -1321,7 +1321,7 @@ class Mission
 					};
 					id=2;
 					type="B_Soldier_TL_F";
-					atlOffset=23.197001;
+					atlOffset=23.196844;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1976,7 +1976,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7787.7148,6.29,3255.9626};
+				position[]={7787.7148,6.29,3255.9629};
 			};
 			id=79;
 			type="ModuleTaskCreate_F";
@@ -2108,7 +2108,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="SUCCEEDED";
+							value="ASSIGNED";
 						};
 					};
 				};
@@ -2132,10 +2132,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7761.6069,6.29,3274.1399};
-			angle=5.7967429;
+			angle=5.7967443;
 			class Attributes
 			{
 				text="Location taken control of";
+				onActivation="endMission ""END1""";
 				sizeA=153.233;
 				sizeB=250;
 				sizeC=0;
@@ -3446,16 +3447,57 @@ class Mission
 			id=139;
 			type="EmptyDetectorAreaR250";
 		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7770.0732,6.2900009,3246.5327};
+			};
+			id=140;
+			type="ModuleTaskSetState_F";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="CREATED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=19;
+			nextID=21;
 		};
 		class Links
 		{
-			items=19;
+			items=21;
 			class Item0
 			{
 				linkID=0;
@@ -3644,6 +3686,26 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=140;
+				item1=79;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item20
+			{
+				linkID=20;
+				item0=80;
+				item1=140;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};

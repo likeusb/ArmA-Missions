@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={5850.5923,103.7177,2397.644};
-		dir[]={0.82246882,-0.51521224,-0.24106397};
-		up[]={0.49441803,0.85705984,-0.14491254};
-		aside[]={-0.28126717,3.5623088e-008,-0.95963484};
+		pos[]={5805.8804,103.7177,2383.3665};
+		dir[]={-0.37307522,-0.82317847,0.42802593};
+		up[]={-0.54087794,0.5677821,0.62054485};
+		aside[]={0.7538442,1.0296935e-007,0.65706486};
 	};
 };
 binarizationWanted=0;
@@ -2229,9 +2229,10 @@ class Mission
 		class Item2
 		{
 			dataType="Trigger";
-			position[]={5757.6079,2.5511944,2429.1946};
+			position[]={5757.6079,2.5512013,2429.1951};
 			class Attributes
 			{
+				onActivation="endMission ""END1"";";
 				sizeA=250;
 				sizeB=250;
 				activationType="NOT PRESENT";
