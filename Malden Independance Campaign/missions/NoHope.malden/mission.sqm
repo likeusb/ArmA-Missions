@@ -12,14 +12,14 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=431;
+		nextID=432;
 	};
 	class Camera
 	{
-		pos[]={754.97198,117.20581,12165.079};
-		dir[]={-0.37508473,-0.86202496,-0.34098181};
-		up[]={-0.63785207,0.50685638,-0.57985878};
-		aside[]={-0.67268401,-2.3236498e-007,0.73996156};
+		pos[]={738.2785,143.55159,12173.229};
+		dir[]={-0.27594143,-0.83246231,-0.48058191};
+		up[]={-0.41451463,0.55406559,-0.72192442};
+		aside[]={-0.86725086,-3.1622039e-007,0.49795872};
 	};
 };
 binarizationWanted=0;
@@ -280,7 +280,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			dataType="Logic";
@@ -596,7 +596,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={709.04602,28.921438,12147.979};
+						position[]={700.59119,28.921438,12141.834};
 						angles[]={0,1.7405121,0};
 					};
 					side="Independent";
@@ -3285,7 +3285,7 @@ class Mission
 		class Item17
 		{
 			dataType="Trigger";
-			position[]={735.23322,28.92,12139.635};
+			position[]={735.23297,28.92,12139.635};
 			class Attributes
 			{
 				sizeA=250;
@@ -3461,7 +3461,7 @@ class Mission
 				sizeA=5;
 				sizeB=5;
 				sizeC=5;
-				timeout[]={2,2,2};
+				timeout[]={1,1,1};
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
@@ -4250,6 +4250,20 @@ class Mission
 			};
 			id=430;
 			type="O_APC_Tracked_02_AA_F";
+		};
+		class Item29
+		{
+			dataType="Trigger";
+			position[]={739.79498,28.92,12137.287};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				activationBy="WEST SEIZED";
+				type="END1";
+			};
+			id=431;
+			type="EmptyDetectorAreaR250";
 		};
 	};
 	class Connections

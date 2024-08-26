@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5579.272,156.1575,11143.132};
-		dir[]={-0.81253797,-0.34138954,-0.47255057};
-		up[]={-0.29515091,0.93990493,-0.17165054};
-		aside[]={-0.50275135,-7.5437129e-008,0.86446893};
+		pos[]={665.62775,152.94055,12090.326};
+		dir[]={0.35537636,-0.85407072,0.37983203};
+		up[]={0.58350801,0.52015591,0.62366247};
+		aside[]={0.73022383,8.8475645e-009,-0.68320858};
 	};
 };
 binarizationWanted=0;
@@ -502,7 +502,7 @@ class Mission
 					};
 					id=14;
 					type="I_soldier_F";
-					atlOffset=-7.6293945e-006;
+					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -552,7 +552,7 @@ class Mission
 			{
 			};
 			id=13;
-			atlOffset=-7.6293945e-006;
+			atlOffset=-1.5258789e-005;
 		};
 		class Item1
 		{
@@ -1715,6 +1715,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air1";
 			};
 			id=75;
@@ -1732,6 +1734,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air3";
 			};
 			id=76;
@@ -1749,6 +1753,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air4";
 			};
 			id=77;
@@ -1765,6 +1771,8 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air2";
 			};
 			id=78;
@@ -1992,6 +2000,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air7";
 			};
 			id=95;
@@ -2026,6 +2036,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air6";
 			};
 			id=96;
@@ -2060,6 +2072,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				ammo=0;
+				fuel=0;
 				name="air5";
 			};
 			id=97;
@@ -2487,7 +2501,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={855.56592,0,11791.028};
-			angle=0.49027467;
+			angle=0.49027464;
 			class Attributes
 			{
 				onActivation="saveGame;";
@@ -3043,11 +3057,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=38;
+			nextID=39;
 		};
 		class Links
 		{
-			items=38;
+			items=39;
 			class Item0
 			{
 				linkID=0;
@@ -3423,6 +3437,16 @@ class Mission
 				linkID=37;
 				item0=114;
 				item1=113;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item38
+			{
+				linkID=38;
+				item0=45;
+				item1=102;
 				class CustomData
 				{
 					type="Sync";

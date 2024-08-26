@@ -91,7 +91,7 @@ class Campaign
         class Mission13
         {
             template = NoHope.Malden;
-            end1 = 
+            end1 = NATO;
         };
     };
 
