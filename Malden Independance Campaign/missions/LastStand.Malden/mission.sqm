@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7286.791,266.09424,7879.8306};
-		dir[]={-0.76433456,-0.58987439,-0.2605001};
-		up[]={-0.55834842,0.80748546,-0.19029588};
-		aside[]={-0.32260066,4.5367051e-007,0.94654489};
+		pos[]={7326.4839,196.75237,7918.1274};
+		dir[]={0.27180895,-0.88332111,0.38195193};
+		up[]={0.51215428,0.46876255,0.71969134};
+		aside[]={0.81476402,-3.0267984e-008,-0.5798105};
 	};
 };
 binarizationWanted=0;
@@ -1847,7 +1847,7 @@ class Mission
 					};
 					id=76;
 					type="B_Soldier_SL_F";
-					atlOffset=-7.6293945e-006;
+					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2514,7 +2514,7 @@ class Mission
 				};
 			};
 			id=130;
-			atlOffset=-7.6293945e-006;
+			atlOffset=-1.5258789e-005;
 		};
 		class Item27
 		{
@@ -2601,6 +2601,7 @@ class Mission
 			class Attributes
 			{
 				condition="!alive officer;";
+				onActivation="endMission ""END1"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,1,1};
