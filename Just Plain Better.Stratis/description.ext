@@ -1,0 +1,77 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 8;
+};
+
+loadScreen = "hehe.jpg";
+author = Likeusb;
+onLoadName = Factory;
+OnLoadMission = "Never gonna give you up, never gonna let you down, never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye, never gonna tell a lie or hurt you";
+respawn = BASE;
+respawndelay = 15;
+disabledAI = true;
+respawnOnStart = 0;
+
+class cfgORBAT
+{
+    class HQ
+    {
+        side = "Resistance";
+        size = "Division";
+        type = "HQ";
+        insignia = "img\AAF.png";
+        colorInsignia[] = { 13, 142, 12, 1 };
+        commander = "Rosi Oikonomopulu";
+        text = "Altis Armed Forces";
+        textShort = "AAF";
+        color = { 13, 142, 12, 1 };
+
+        class AltisBrigade
+        {
+            side = "Resistance";
+            size = "Brigade";
+            type = "HQ";
+            insignia = "img\AAF.png";
+            colorInsignia[] = { 13, 142, 12, 1 };
+            commander = "Dimitirou Athanasiadis";
+            text = "Altis Brigade";
+            textShort = "Altis Brigade";
+            color[] = { 13, 142, 12, 1 };
+        };
+
+        class StratisBatallion
+        {
+            side = "Resistance";
+            size = "Batallion";
+            type = "HQ";
+            insignia = "img\AAF.png";
+            colorInsignia[] = { 13, 142, 12, 1 };
+            commander = "Kostas Papadopoulos";
+            text = "Stratis Batallion";
+            textShort = "Stratis Batallion";
+            color[] = { 13, 142, 12, 1 };
+
+            class TempestNaval
+            {
+                id = 1;
+                idType = 0;
+                side = "Resistance";
+                size = "Platoon";
+                type = "Maritime";
+                insignia = "img\AAF.png";
+                colorInsignia[] = { 13, 142, 12, 1 };
+                commander = "Nikos Katsaros";
+                text = "%1 Naval %3";
+                textShort = "%1 Naval";
+                color[] = { 13, 142, 12, 1 };
+            };
+
+            class 
+            {
+                id = 1
+            };
+        };
+    };
+};
