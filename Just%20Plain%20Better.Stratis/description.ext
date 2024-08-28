@@ -27,6 +27,7 @@ class cfgORBAT
 
         subordinates[] = { "AltisBrigade", "StratisBatallion" };
 
+        insignia = "img\AAF.paa";
     };
 
     class AltisBrigade
@@ -37,6 +38,7 @@ class cfgORBAT
         commander = "Dimitirou Athanasiadis";
         text = "Altis Brigade";
         textShort = "Altis Brigade";
+        insignia = "img\AAF.paa";
     };
     
     class StratisBatallion
@@ -48,7 +50,9 @@ class cfgORBAT
         text = "Stratis Batallion";
         textShort = "Stratis Batallion";
 
-        subordinates[] = { "TempestNaval", "MaxwellMortar", "rangeArty", "helicopter", "aircraft"};
+        subordinates[] = { "TempestNaval", "MaxwellMortar", "rangeArty", "helicopter", "aircraft", "kamino", "outpost", "mike26", "lzconnor", "mx", "guard", "mechanized"};
+
+        insignia = "img\AAF.paa";
     };
 
     class TempestNaval
@@ -64,6 +68,7 @@ class cfgORBAT
         assets[] = {
             { "I_Boat_Armed_01_minigun_F", 4}
         };
+        insignia = "img\AAF.paa";
     };
 
     class MaxwellMortar
@@ -79,6 +84,7 @@ class cfgORBAT
         assets[] = {
             { "I_Mortar_01_F", 4}
         };
+        insignia = "img\AAF.paa";
     };
 
     class rangeArty 
@@ -94,6 +100,7 @@ class cfgORBAT
         assets[] = {
             { "I_Truck_02_MRL_F", 2}
         };
+        insignia = "img\AAF.paa";
     };
 
     class helicopter
@@ -107,10 +114,11 @@ class cfgORBAT
         text = "%1 Helicopter %3";
         textShort = "%1 Helicopter";
         assets[] = {
-            { "I_Heli_Light_02_dynamicLoadout", 4},
+            { "I_Heli_Light_02_dynamicLoadout", 2},
             { "I_Heli_light_03_dynamicLoadout_F", 1},
             { "I_Heli_Transport_02_F", 1}
         };
+        insignia = "img\AAF.paa";
     };
 
     class aircraft
@@ -127,5 +135,118 @@ class cfgORBAT
             { "I_Plane_Fighter_03_dynamicLoadout_F", 3},
             { "I_Plane_Fighter_04_F", 4}
         };
+        insignia = "img\AAF.paa";
+    };
+
+    class kamino
+    {
+        id = 4;
+        idType = 0;
+        side = "Resistance";
+        size = "Squad";
+        type = "Infantry";
+        commander = "Kostas Vidales";
+        text = "Delta 4-%1";
+        textShort = "D 4-%1";
+        assets[] = {
+            { "I_Truck_02_transport_F", 1}
+        };
+        insignia = "img\AAF.paa";
+    };
+
+    class outpost
+    {
+        id = 6;
+        idType = 0;
+        side = "Resistance";
+        size = "Section";
+        type = "Infantry";
+        commander = "Orestis Petridis";
+        text = "Delta 4-%1";
+        textShort = "D 4-%1";
+        assets[] = {
+            { "I_Truck_02_transport_F", 1}
+        };
+        insignia = "img\AAF.paa";
+    };
+
+    class mike26
+    {
+        id = 5;
+        idType = 0;
+        side = "Resistance";
+        size = "Section";
+        type = "Infantry";
+        commander = "Orestis Gikas";
+        text = "Delta 4-%1";
+        textShort = "D 4-%1";
+        assets[] = {
+            { "I_Truck_02_transport_F", 2},
+            { "I_MRAP_03_F", 1}  
+        };
+        insignia = "img\AAF.paa";
+    };
+
+    class lzconnor
+    {
+        id = 3;
+        idType = 0;
+        side = "Resistance";
+        size = "Squad";
+        type = "Infantry";
+        commander = "Sotiris Savalas";
+        text = "Delta 4-%1";
+        textShort = "D 4-%1";
+        insignia = "img\AAF.paa";
+    };
+
+    class mx
+    {
+        id = 3;
+        idType = 0;
+        side = "Resistance";
+        size = "FireTeam";
+        type = "Maintenance";
+        commander = "Kostis Manago";
+        text = "%1 Maintenance %3";
+        textShort = "%1 Maintenance";
+        assets[] = {
+            { "I_Truck_02_box_F", 1},
+            { "I_Truck_02_transport_F", 1},
+            { "I_MRAP_03_F", 2}
+        };
+        insignia = "img\AAF.paa";
+    };
+    
+    class guard
+    {
+        id = 9;
+        idType = 0;
+        side = "Resistance";
+        size = "FireTeam";
+        type = "MotorizedInfantry";
+        commander = "Dimitiros Floros";
+        text = "%1 Guard %3";
+        textShort = "%1 Guard";
+        assets[] = {
+            { "I_MRAP_03_hmg_F", 1}
+        };
+        insignia = "img\AAF.paa";
+    };
+
+    class mechanized
+    {
+        id = 6;
+        idType = 0;
+        side = "Resistance";
+        size = "Section";
+        type = "MechanizedInfantry";
+        commander = "Michalis Stanis";
+        text = "%1 Mechanized %3";
+        textShort = "%1 Mechanized";
+        assets[] = {
+            { "I_APC_Wheeled_03_cannon_F", 2}  
+        };
+        insignia = "img\AAF.paa";
     };
 };
