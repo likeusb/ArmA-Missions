@@ -21,14 +21,12 @@ class cfgORBAT
         side = "Resistance";
         size = "Division";
         type = "HQ";
-        insignia = "img\AAF.paa";
-        colorInsignia[] = { 13, 142, 12, 1 };
         commander = "Rosi Oikonomopulu";
         text = "Altis Armed Forces";
         textShort = "AAF";
-        color = { 13, 142, 12, 1 };
 
         subordinates[] = { "AltisBrigade", "StratisBatallion" };
+
     };
 
     class AltisBrigade
@@ -36,27 +34,23 @@ class cfgORBAT
         side = "Resistance";
         size = "Brigade";
         type = "HQ";
-        insignia = "img\AAF.paa";
-        colorInsignia[] = { 13, 142, 12, 1 };
         commander = "Dimitirou Athanasiadis";
         text = "Altis Brigade";
         textShort = "Altis Brigade";
-        color[] = { 13, 142, 12, 1 };
     };
-
+    
     class StratisBatallion
     {
         side = "Resistance";
         size = "Batallion";
         type = "HQ";
-        insignia = "img\AAF.paa";
-        colorInsignia[] = { 13, 142, 12, 1 };
-        commander = "Kostas Papadopoulos";
+        commander = "Kostakis Spiros";
         text = "Stratis Batallion";
         textShort = "Stratis Batallion";
-        color[] = { 13, 142, 12, 1 };
-        subordinates[] = { "TempestInfantry", "TempestMechanized", "TempestRecon", "TempestAviation","TempestNaval", "MaxwellMortar" };
+
+        subordinates[] = { "TempestNaval", "MaxwellMortar", "rangeArty", "helicopter", "aircraft"};
     };
+
     class TempestNaval
     {
         id = 7;
@@ -64,25 +58,74 @@ class cfgORBAT
         side = "Resistance";
         size = "Platoon";
         type = "Maritime";
-        insignia = "img\AAF.paa";
-        colorInsignia[] = { 13, 142, 12, 1 };
-        commander = "Nikos Katsaros";
+        commander = "Nicolo Zenon";
         text = "%1 Naval %3";
         textShort = "%1 Naval";
-        color[] = { 13, 142, 12, 1 };
+        assets[] = {
+            { "I_Boat_Armed_01_minigun_F", 4}
+        };
     };
+
     class MaxwellMortar
     {
         id = 12;
         idType = 0;
         side = "Resistance";
         size = "Platoon";
-        type = "Artillery";
-        insignia = "img\AAF.paa";
-        colorInsignia[] = { 13, 142, 12, 1 };
+        type = "Mortar";
         commander = "Homer Lagos";
         text = "%1 Mortar %3";
         textShort = "%1 Mortar";
-        color[] = { 13, 142, 12, 1 };
+        assets[] = {
+            { "I_Mortar_01_F", 4}
+        };
+    };
+
+    class rangeArty 
+    {
+        id = 9;
+        idType = 0;
+        side = "Resistance";
+        size = "Section";
+        type = "Artillery";
+        commander = "Giorgos Moritiadou";
+        text = "%1 Artillery %3";
+        textShort = "%1 Artillery";
+        assets[] = {
+            { "I_Truck_02_MRL_F", 2}
+        };
+    };
+
+    class helicopter
+    {
+        id = 3;
+        idType = 0;
+        side = "Resistance";
+        size = "Platoon";
+        type = "Helicopter";
+        commander = "Gregor Petridis";
+        text = "%1 Helicopter %3";
+        textShort = "%1 Helicopter";
+        assets[] = {
+            { "I_Heli_Light_02_dynamicLoadout", 4},
+            { "I_Heli_light_03_dynamicLoadout_F", 1},
+            { "I_Heli_Transport_02_F", 1}
+        };
+    };
+
+    class aircraft
+    {
+        id = 5;
+        idType = 0;
+        side = "Resistance";
+        size = "Platoon";
+        type = "Fighter";
+        commander = "Gregor Petridis";
+        text = "%1 Fighter %3";
+        textShort = "%1 Fighter";
+        assets[] = {
+            { "I_Plane_Fighter_03_dynamicLoadout_F", 3},
+            { "I_Plane_Fighter_04_F", 4}
+        };
     };
 };
