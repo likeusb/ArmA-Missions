@@ -253,6 +253,10 @@ support_vehicles = [
     ["CUP_B_MTVR_Repair_USMC",425,0,75],                                // MTVR Repair
     ["CUP_B_MTVR_Refuel_USMC",125,0,375],                               // MTVR Refuel
     ["CUP_B_MTVR_Ammo_USMC",125,300,75],                                // MTVR Ammo
+    ["B_T_Truck_01_ammo_F",125,300,75],                                // HEMTT Ammo
+    ["B_T_Truck_01_fuel_F",125,0,375],                                 // HEMTT Fuel
+    ["B_T_Truck_01_repair_F",425,0,75],                              // HEMTT Repair
+    ["B_T_Truck_01_cargo_F", 100,0,75],                               // HEMTT Cargo
     ["B_Slingload_01_Repair_F",375,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,300],                                 // Huron Fuel
     ["B_Slingload_01_Ammo_F",75,300,0]                                  // Huron Ammo
