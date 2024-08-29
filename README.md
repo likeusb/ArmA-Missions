@@ -20,3 +20,16 @@ Keep in mind to actually use these files you will need to also create a folder w
 `likeusb ArmA-Missions main Malden Independance Campaign.zip`, you would want to turn it into just `Malden Independance Campaign` as the folder name.
 
 And from there, just put the contents of the zip into said folder.
+
+# KP Liberation
+Liberation is a very special kind of gamemode and has external files. These are included in the same folder as that mission. For the installation, download that folder, take the zip file inside the folder, and extract it into a separate temporary folder. In said temp folder, replace the kp_liberation_config.sqf file with the one in the mission folder, and go into the presets\blufor folder. In there, paste in the custom.sqf and CUP_USA_Woodland.sqf, and in the presets\opfor folder, paste in the CUP_AFRF_ModernMSV.sqf. Lastly, in the root of the temp folder, put in the mission.sqf file.
+
+Then, run the server like you would any other KP Liberation server, or, if you don't know how, then:
+# Step 1: PBO Manager
+Download the PBO manager tool. This will help you tremendously.
+
+# Step 2: Turning files into .pbo and loading them
+To do this, right click on your temp folder and click on show more options if you're on windows 11, and then click on PBO Manager, and save that folder as a .pbo. Make sure you name it kp_liberation.mehland.pbo, and then put that into your ArmA 3 root directory's MPMissions folder, just like how you would with the campaign.
+
+# Step 3: Hosting the server
+To do this, simply go to ArmA 3, to the server browser, click on host server, go to the Mehland map, and then select the KP liberation preset. And there you go! You are now able to play the map
