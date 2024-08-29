@@ -31,5 +31,12 @@ Download the PBO manager tool. This will help you tremendously.
 # Step 2: Turning files into .pbo and loading them
 To do this, right click on your temp folder and click on show more options if you're on windows 11, and then click on PBO Manager, and save that folder as a .pbo. Make sure you name it kp_liberation.mehland.pbo, and then put that into your ArmA 3 root directory's MPMissions folder, just like how you would with the campaign.
 
+(Or just download the .pbo file in the folder)
+
 # Step 3: Hosting the server
 To do this, simply go to ArmA 3, to the server browser, click on host server, go to the Mehland map, and then select the KP liberation preset. And there you go! You are now able to play the map
+
+# CREDITS
+
+Credit to the KP Liberation github repo people for providing excellent documentation and devkits and credit to Fatrefridgerator for creating an existing Mehland port that comes with a boat battlegroup feature! Download link: https://steamcommunity.com/sharedfiles/filedetails/?id=3320189045
+
