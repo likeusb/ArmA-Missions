@@ -20,21 +20,21 @@
     The same classnames for different purposes may cause various unpredictable issues with player actions.
     Or not, just don't try!
 */
-FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This is the main FOB HQ building.
+FOB_typename = "Land_MedicalTent_01_NATO_tropic_generic_inner_F";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
-FOB_truck_typename = "B_Truck_01_box_F";                                // This is the FOB as a vehicle.
+FOB_truck_typename = "B_T_Truck_01_box_F";                                // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "B_Truck_01_medical_F";                        // This is the mobile respawn (and medical) truck.
-huron_typename = "B_Heli_Transport_03_unarmed_F";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
-pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "B_Heli_Light_01_F";              // These are the little birds which spawn on the Freedom or at Chimera base.
-KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
-KP_liberation_truck_classname = "B_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
+Respawn_truck_typename = "sfp_81_tgb1314";                        // This is the mobile respawn (and medical) truck.
+huron_typename = "sfp_hkp4";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+crewman_classname = "sfp_m90w_crew";                                         // This defines the crew for vehicles.
+pilot_classname = "sfp_m90w_helipilot";                                      // This defines the pilot for helicopters.
+KP_liberation_little_bird_classname = "sfp_hkp9_sog";              // These are the little birds which spawn on the Freedom or at Chimera base.
+KP_liberation_boat_classname = "sfp_strb90";                 // These are the boats which spawn at the stern of the Freedom.
+KP_liberation_truck_classname = "B_T_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
-KP_liberation_recycle_building = "Land_RepairDepot_01_tan_F";           // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "B_Radar_System_01_F";             // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_recycle_building = "Land_RepairDepot_01_green_F";           // The building defined to unlock FOB recycling functionality.
+KP_liberation_air_vehicle_building = "USMC_WarfareBAntiAirRadar";             // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
@@ -50,76 +50,41 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["B_Soldier_lite_F",15,0,0],                                        // Rifleman (Light)
-    ["B_Soldier_F",20,0,0],                                             // Rifleman
-    ["B_soldier_LAT_F",30,0,0],                                         // Rifleman (AT)
-    ["B_Soldier_GL_F",25,0,0],                                          // Grenadier
-    ["B_soldier_AR_F",25,0,0],                                          // Autorifleman
-    ["B_HeavyGunner_F",35,0,0],                                         // Heavygunner
-    ["B_soldier_M_F",30,0,0],                                           // Marksman
-    ["B_Sharpshooter_F",40,0,0],                                        // Sharpshooter
-    ["B_soldier_AT_F",50,10,0],                                         // AT Specialist
-    ["B_soldier_AA_F",50,10,0],                                         // AA Specialist
-    ["B_medic_F",30,0,0],                                               // Combat Life Saver
-    ["B_engineer_F",30,0,0],                                            // Engineer
-    ["B_soldier_exp_F",30,0,0],                                         // Explosives Specialist
-    ["B_recon_F",20,0,0],                                               // Recon Scout
-    ["B_recon_LAT_F",30,0,0],                                           // Recon Scout (AT)
-    ["B_recon_M_F",30,0,0],                                             // Recon Marksman
-    ["B_Recon_Sharpshooter_F",40,0,0],                                  // Recon Sharpshooter
-    ["B_recon_medic_F",30,0,0],                                         // Recon Paramedic
-    ["B_recon_exp_F",30,0,0],                                           // Recon Demolition Expert
-    ["B_sniper_F",70,5,0],                                              // Sniper
-    ["B_ghillie_ard_F",70,5,0],                                         // Sniper (Arid)
-    ["B_ghillie_lsh_F",70,5,0],                                         // Sniper (Lush)
-    ["B_ghillie_sard_F",70,5,0],                                        // Sniper (Semi-Arid)
-    ["B_spotter_F",20,0,0],                                             // Spotter
-    ["B_crew_F",10,0,0],                                                // Crewman
-    ["B_soldier_PG_F",20,0,0],                                          // Para Trooper
-    ["B_helicrew_F",10,0,0],                                            // Helicopter Crew
-    ["B_Helipilot_F",10,0,0],                                           // Helicopter Pilot
-    ["B_Pilot_F",10,0,0]                                                // Pilot
+    ["sfp_m90w_rifleman_tshirt",15,0,0],                                // Rifleman (Light)
+    ["sfp_m90w_rifleman_ak5",20,0,0],                                   // Rifleman
+    ["sfp_m90w_at_specialist_pskott86",30,0,0],                         // Rifleman (AT)
+    ["sfp_m90w_gr",25,0,0],                                             // Grenadier
+    ["sfp_m90w_automaticrifleman_ksp90",25,0,0],                        // Autorifleman
+    ["sfp_m90w_machinegunner_ksp58",35,0,0],                            // Heavygunner
+    ["sfp_m90w_marksman",30,0,0],                                       // Marksman
+    ["sfp_m90w_at_specialist_rb57",50,10,0],                            // AT Specialist (Rb 57)
+    ["sfp_m90w_at_specialist_grg86",50,10,0],                           // AT Specialist (GRG)
+    ["sfp_m90w_at_loader_grg86",50,10,0],                               // AT Loader (GRG)
+    ["sfp_m90w_medic",30,0,0],                                          // Combat Life Saver
+    ["sfp_m90w_engineer",30,0,0],                                       // Engineer
+    ["sfp_m90w_explosive_specialist",30,0,0],                           // Explosives Specialist
+    ["sfp_m90w_sog_ak5",20,0,0],                                        // Recon Rifleman
+    ["sfp_m90w_sog_at_specialist_rb57",30,0,0],                         // Recon Rifleman (AT)
+    ["sfp_m90w_sog_ksp90",25,0,0],                                      // Recon Autorifleman
+    ["sfp_m90w_sog_machinegunner_ksp58",35,0,0],                        // Recon Machine Gunner
+    ["sfp_m90w_sog_sniper",30,0,0],                                     // Recon Marksman (Psg 90)
+    ["sfp_m90w_sog_sniper_ag90",70,5,0],                                // Recon Sniper (Ag 90)
+    ["sfp_m90w_sniper",70,5,0],                                         // Sniper (Psg 90)
+    ["sfp_m90w_rifleman_ag90",70,5,0],                                  // Sniper (Ag 90)
+    ["sfp_m90w_crew",10,0,0],                                           // Crewman
+    ["sfp_m90w_helipilot",10,0,0],                                      // Helicopter Pilot
+    ["sfp_m90w_pilot",10,0,0]                                           // Pilot
 ];
 
 light_vehicles = [
-    ["B_Quadbike_01_F",50,0,25],                                        // Quad Bike
-    ["B_LSV_01_unarmed_F",75,0,50],                                     // Prowler
-    ["B_LSV_01_armed_F",75,40,50],                                      // Prowler (HMG)
-    ["B_LSV_01_AT_F",75,60,50],                                         // Prowler (AT)
-    ["B_MRAP_01_F",100,0,50],                                           // Hunter
-    ["B_MRAP_01_hmg_F",100,40,50],                                      // Hunter (HMG)
-    ["B_MRAP_01_gmg_F",100,60,50],                                      // Hunter (GMG)
-    ["I_MRAP_03_F",100,0,50],                                           // Strider
-    ["I_MRAP_03_hmg_F",100,40,50],                                      // Strider (HMG)
-    ["I_MRAP_03_gmg_F",100,60,50],                                      // Strider (GMG)
-    ["rhsusf_m1025_w",100,0,50],                                        // M1025A2
-    ["rhsusf_m1025_w_m2",100,40,50],                                    // M1025A2 (M2)
-    ["rhsusf_m1025_w_mk19",100,60,50],                                  // M1025A2 (Mk19)
-    ["rhsusf_m998_w_2dr_fulltop",100,0,50],                             // M1097A2 (2D)
-    ["rhsusf_m998_w_2dr_halftop",100,0,50],                             // M1097A2 (2D / open back)
-    ["rhsusf_M1220_usarmy_wd",120,0,60],                                // M1220
-    ["rhsusf_M1220_M2_usarmy_wd",120,40,60],                            // M1220 (M2)
-    ["rhsusf_M1220_MK19_usarmy_wd",120,60,60],                          // M1220 (Mk19)
-    ["rhsusf_M1232_usarmy_wd",140,0,60],                                // M1220
-    ["rhsusf_M1232_M2_usarmy_wd",140,40,60],                            // M1220 (M2)
-    ["rhsusf_M1232_MK19_usarmy_wd",140,60,60],                          // M1220 (Mk19)
-    ["BWA3_Eagle_Fleck",100,0,50],                                      // Eagle IV
-    ["BWA3_Eagle_FLW100_Fleck",100,100,50],                             // Eagle IV (FLW 100)
-    ["rhsusf_M1230a1_usarmy_wd",120,0,60],                              // M1230A1 (MEDEVAC)
-    ["B_Truck_01_transport_F",125,0,75],                                // HEMTT Transport
-    ["B_Truck_01_covered_F",125,0,75],                                  // HEMTT Transport (Covered)
-    ["rhsusf_M1083A1P2_wd_open_fmtv_usarmy",125,0,75],                  // M1083A1P2 Transport
-    ["rhsusf_M1083A1P2_wd_fmtv_usarmy",125,0,75],                       // M1083A1P2 Transport (Covered)
-    ["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy",100,0,50],               // M1083A1P2
-    ["rhsusf_M977A4_BKIT_usarmy_wd",125,0,75],                          // M977A4 BKIT
-    ["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,40,75],                      // M977A4 BKIT (HMG)
-    ["rhsusf_M1117_W",150,50,50],                                       // M1117 ASV
-    ["B_UGV_01_F",150,0,50],                                            // UGV Stomper
-    ["B_UGV_01_rcws_F",150,40,50],                                      // UGV Stomper (RCWS)
-    ["B_Boat_Transport_01_F",100,0,25],                                 // Assault Boat
-    ["B_Boat_Armed_01_minigun_F",200,80,75],                            // Speedboat Minigun
-    ["rhsusf_mkvsoc",250,200,100],                                      // Mk.V SOCOM
-    ["B_SDV_01_F",150,0,50]                                             // SDV
+    ["sfp_cykel42",0,0,0], // Bicycle
+    ["CUP_C_Datsun_4seat",50,0,25], // Pickup
+    ["sfp_81_bv206",75,0,25], // Bv 206
+    ["sfp_81_tgb11",100,0,50], // Tgb 11
+    ["sfp_81_tgb1111",200,50,50], // Tgb 1111 AT
+    ["sfp_81_tgb13_ksp58",200,50,50], // Tgb 13 Ksp 58
+    ["sfp_strb90",200,50,75], // Strb 90
+    ["sfp_strb90_rws", 300,100,75]
 ];
 
 heavy_vehicles = [
