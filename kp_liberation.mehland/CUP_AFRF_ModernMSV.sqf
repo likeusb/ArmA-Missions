@@ -178,3 +178,9 @@ opfor_air = [
     "CUP_O_Su25_Dyn_RU",                                                // Su-25T Frogfoot
     "CUP_O_SU34_RU"                                                     // Su-34
 ];
+
+
+opfor_boat = [
+    "B_Boat_Armed_01_minigun_F", // Speedboat Minigun (Originates from NATO, might cause issues?)
+    "O_Boat_Armed_01_hmg_F" // Speedboat HMG
+];
