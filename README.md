@@ -21,6 +21,10 @@ Keep in mind to actually use these files you will need to also create a folder w
 
 And from there, just put the contents of the zip into said folder.
 
+If all is done right, you should see this in your Campaigns!
+![image](https://github.com/user-attachments/assets/6bee6207-51c6-4564-a263-b9e6919782b1)
+
+
 # KP Liberation
 Liberation is a very special kind of gamemode and has external files. These are included in the same folder as that mission. For the installation, download that folder, take the zip file inside the folder, and extract it into a separate temporary folder. In said temp folder, replace the kp_liberation_config.sqf file with the one in the mission folder, and go into the presets\blufor folder. In there, paste in the custom.sqf and CUP_USA_Woodland.sqf, and in the presets\opfor folder, paste in the CUP_AFRF_ModernMSV.sqf. Lastly, in the root of the temp folder, put in the mission.sqf file.
 
